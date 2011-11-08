@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F952DD351464B76A00A14A38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD341464B76A00A14A38 /* UIKit.framework */; };
+		F952DD371464B76A00A14A38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD361464B76A00A14A38 /* Foundation.framework */; };
+		F952DD391464B76A00A14A38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD381464B76A00A14A38 /* CoreGraphics.framework */; };
+		F952DD3F1464B76A00A14A38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F952DD3D1464B76A00A14A38 /* InfoPlist.strings */; };
+		F952DD411464B76A00A14A38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F952DD401464B76A00A14A38 /* main.m */; };
+		F952DD451464B76A00A14A38 /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F952DD441464B76A00A14A38 /* CMAppDelegate.m */; };
+		F952DD481464B76A00A14A38 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F952DD461464B76A00A14A38 /* MainStoryboard.storyboard */; };
+		F952DD4B1464B76A00A14A38 /* CMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F952DD4A1464B76A00A14A38 /* CMViewController.m */; };
+		F952DD541464B76A00A14A38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD341464B76A00A14A38 /* UIKit.framework */; };
+		F952DD551464B76A00A14A38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD361464B76A00A14A38 /* Foundation.framework */; };
+		F952DD5D1464B76A00A14A38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F952DD5B1464B76A00A14A38 /* InfoPlist.strings */; };
+		F952DD601464B76A00A14A38 /* CalimuchoParseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F952DD5F1464B76A00A14A38 /* CalimuchoParseTests.m */; };
+		F965532F1469235C00E138ED /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F965532E1469235C00E138ED /* FriendsViewController.m */; };
+		F96C49BC1465FB2C00B943BB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49BB1465FB2C00B943BB /* Parse.framework */; };
+		F96C49BE1465FDD300B943BB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49BD1465FDD300B943BB /* AudioToolbox.framework */; };
+		F96C49C01465FDDC00B943BB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49BF1465FDDC00B943BB /* CFNetwork.framework */; };
+		F96C49C21465FDE800B943BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49C11465FDE800B943BB /* SystemConfiguration.framework */; };
+		F96C49C41465FDF300B943BB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49C31465FDF300B943BB /* MobileCoreServices.framework */; };
+		F96C49C61465FE0500B943BB /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49C51465FE0500B943BB /* libz.1.1.3.dylib */; };
+		F96C49C81465FE0C00B943BB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49C71465FE0C00B943BB /* Security.framework */; };
+		F96C49CB1466168E00B943BB /* CreateAcctViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96C49CA1466168E00B943BB /* CreateAcctViewController.m */; };
+		F98980A51467EF590008EC4A /* VendorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98980A41467EF590008EC4A /* VendorViewController.m */; };
+		F98980A91467FB140008EC4A /* Vendor.m in Sources */ = {isa = PBXBuildFile; fileRef = F98980A81467FB140008EC4A /* Vendor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F952DD561464B76A00A14A38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F952DD271464B76A00A14A38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F952DD2F1464B76A00A14A38;
+			remoteInfo = CalimuchoParse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F952DD301464B76A00A14A38 /* CalimuchoParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalimuchoParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F952DD341464B76A00A14A38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F952DD361464B76A00A14A38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F952DD381464B76A00A14A38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F952DD3C1464B76A00A14A38 /* CalimuchoParse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalimuchoParse-Info.plist"; sourceTree = "<group>"; };
+		F952DD3E1464B76A00A14A38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F952DD401464B76A00A14A38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F952DD421464B76A00A14A38 /* CalimuchoParse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalimuchoParse-Prefix.pch"; sourceTree = "<group>"; };
+		F952DD431464B76A00A14A38 /* CMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
+		F952DD441464B76A00A14A38 /* CMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
+		F952DD471464B76A00A14A38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F952DD491464B76A00A14A38 /* CMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMViewController.h; sourceTree = "<group>"; };
+		F952DD4A1464B76A00A14A38 /* CMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMViewController.m; sourceTree = "<group>"; };
+		F952DD511464B76A00A14A38 /* CalimuchoParseTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalimuchoParseTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F952DD5A1464B76A00A14A38 /* CalimuchoParseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalimuchoParseTests-Info.plist"; sourceTree = "<group>"; };
+		F952DD5C1464B76A00A14A38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F952DD5E1464B76A00A14A38 /* CalimuchoParseTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalimuchoParseTests.h; sourceTree = "<group>"; };
+		F952DD5F1464B76A00A14A38 /* CalimuchoParseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalimuchoParseTests.m; sourceTree = "<group>"; };
+		F965532D1469235C00E138ED /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		F965532E1469235C00E138ED /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		F96C49BB1465FB2C00B943BB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F96C49BD1465FDD300B943BB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F96C49BF1465FDDC00B943BB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F96C49C11465FDE800B943BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F96C49C31465FDF300B943BB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F96C49C51465FE0500B943BB /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		F96C49C71465FE0C00B943BB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F96C49C91466168E00B943BB /* CreateAcctViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAcctViewController.h; sourceTree = "<group>"; };
+		F96C49CA1466168E00B943BB /* CreateAcctViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAcctViewController.m; sourceTree = "<group>"; };
+		F98980A31467EF590008EC4A /* VendorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendorViewController.h; sourceTree = "<group>"; };
+		F98980A41467EF590008EC4A /* VendorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendorViewController.m; sourceTree = "<group>"; };
+		F98980A71467FB140008EC4A /* Vendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vendor.h; sourceTree = "<group>"; };
+		F98980A81467FB140008EC4A /* Vendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vendor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F952DD2D1464B76A00A14A38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F952DD391464B76A00A14A38 /* CoreGraphics.framework in Frameworks */,
+				F96C49C81465FE0C00B943BB /* Security.framework in Frameworks */,
+				F96C49C61465FE0500B943BB /* libz.1.1.3.dylib in Frameworks */,
+				F96C49C41465FDF300B943BB /* MobileCoreServices.framework in Frameworks */,
+				F96C49C21465FDE800B943BB /* SystemConfiguration.framework in Frameworks */,
+				F96C49C01465FDDC00B943BB /* CFNetwork.framework in Frameworks */,
+				F96C49BE1465FDD300B943BB /* AudioToolbox.framework in Frameworks */,
+				F952DD351464B76A00A14A38 /* UIKit.framework in Frameworks */,
+				F952DD371464B76A00A14A38 /* Foundation.framework in Frameworks */,
+				F96C49BC1465FB2C00B943BB /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F952DD4D1464B76A00A14A38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F952DD541464B76A00A14A38 /* UIKit.framework in Frameworks */,
+				F952DD551464B76A00A14A38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F952DD251464B76A00A14A38 = {
+			isa = PBXGroup;
+			children = (
+				F952DD3A1464B76A00A14A38 /* CalimuchoParse */,
+				F952DD581464B76A00A14A38 /* CalimuchoParseTests */,
+				F952DD331464B76A00A14A38 /* Frameworks */,
+				F952DD311464B76A00A14A38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F952DD311464B76A00A14A38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F952DD301464B76A00A14A38 /* CalimuchoParse.app */,
+				F952DD511464B76A00A14A38 /* CalimuchoParseTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F952DD331464B76A00A14A38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F96C49C71465FE0C00B943BB /* Security.framework */,
+				F96C49C51465FE0500B943BB /* libz.1.1.3.dylib */,
+				F96C49C31465FDF300B943BB /* MobileCoreServices.framework */,
+				F96C49C11465FDE800B943BB /* SystemConfiguration.framework */,
+				F96C49BF1465FDDC00B943BB /* CFNetwork.framework */,
+				F96C49BD1465FDD300B943BB /* AudioToolbox.framework */,
+				F96C49BB1465FB2C00B943BB /* Parse.framework */,
+				F952DD341464B76A00A14A38 /* UIKit.framework */,
+				F952DD361464B76A00A14A38 /* Foundation.framework */,
+				F952DD381464B76A00A14A38 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F952DD3A1464B76A00A14A38 /* CalimuchoParse */ = {
+			isa = PBXGroup;
+			children = (
+				F96C49C91466168E00B943BB /* CreateAcctViewController.h */,
+				F96C49CA1466168E00B943BB /* CreateAcctViewController.m */,
+				F952DD431464B76A00A14A38 /* CMAppDelegate.h */,
+				F952DD441464B76A00A14A38 /* CMAppDelegate.m */,
+				F952DD461464B76A00A14A38 /* MainStoryboard.storyboard */,
+				F965532D1469235C00E138ED /* FriendsViewController.h */,
+				F965532E1469235C00E138ED /* FriendsViewController.m */,
+				F98980A31467EF590008EC4A /* VendorViewController.h */,
+				F98980A41467EF590008EC4A /* VendorViewController.m */,
+				F952DD491464B76A00A14A38 /* CMViewController.h */,
+				F952DD4A1464B76A00A14A38 /* CMViewController.m */,
+				F98980A71467FB140008EC4A /* Vendor.h */,
+				F98980A81467FB140008EC4A /* Vendor.m */,
+				F952DD3B1464B76A00A14A38 /* Supporting Files */,
+			);
+			path = CalimuchoParse;
+			sourceTree = "<group>";
+		};
+		F952DD3B1464B76A00A14A38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F952DD3C1464B76A00A14A38 /* CalimuchoParse-Info.plist */,
+				F952DD3D1464B76A00A14A38 /* InfoPlist.strings */,
+				F952DD401464B76A00A14A38 /* main.m */,
+				F952DD421464B76A00A14A38 /* CalimuchoParse-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F952DD581464B76A00A14A38 /* CalimuchoParseTests */ = {
+			isa = PBXGroup;
+			children = (
+				F952DD5E1464B76A00A14A38 /* CalimuchoParseTests.h */,
+				F952DD5F1464B76A00A14A38 /* CalimuchoParseTests.m */,
+				F952DD591464B76A00A14A38 /* Supporting Files */,
+			);
+			path = CalimuchoParseTests;
+			sourceTree = "<group>";
+		};
+		F952DD591464B76A00A14A38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F952DD5A1464B76A00A14A38 /* CalimuchoParseTests-Info.plist */,
+				F952DD5B1464B76A00A14A38 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F952DD2F1464B76A00A14A38 /* CalimuchoParse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F952DD631464B76A00A14A38 /* Build configuration list for PBXNativeTarget "CalimuchoParse" */;
+			buildPhases = (
+				F952DD2C1464B76A00A14A38 /* Sources */,
+				F952DD2D1464B76A00A14A38 /* Frameworks */,
+				F952DD2E1464B76A00A14A38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalimuchoParse;
+			productName = CalimuchoParse;
+			productReference = F952DD301464B76A00A14A38 /* CalimuchoParse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F952DD501464B76A00A14A38 /* CalimuchoParseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F952DD661464B76A00A14A38 /* Build configuration list for PBXNativeTarget "CalimuchoParseTests" */;
+			buildPhases = (
+				F952DD4C1464B76A00A14A38 /* Sources */,
+				F952DD4D1464B76A00A14A38 /* Frameworks */,
+				F952DD4E1464B76A00A14A38 /* Resources */,
+				F952DD4F1464B76A00A14A38 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F952DD571464B76A00A14A38 /* PBXTargetDependency */,
+			);
+			name = CalimuchoParseTests;
+			productName = CalimuchoParseTests;
+			productReference = F952DD511464B76A00A14A38 /* CalimuchoParseTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F952DD271464B76A00A14A38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = F952DD2A1464B76A00A14A38 /* Build configuration list for PBXProject "CalimuchoParse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F952DD251464B76A00A14A38;
+			productRefGroup = F952DD311464B76A00A14A38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F952DD2F1464B76A00A14A38 /* CalimuchoParse */,
+				F952DD501464B76A00A14A38 /* CalimuchoParseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F952DD2E1464B76A00A14A38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F952DD3F1464B76A00A14A38 /* InfoPlist.strings in Resources */,
+				F952DD481464B76A00A14A38 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F952DD4E1464B76A00A14A38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F952DD5D1464B76A00A14A38 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F952DD4F1464B76A00A14A38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F952DD2C1464B76A00A14A38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F952DD411464B76A00A14A38 /* main.m in Sources */,
+				F952DD451464B76A00A14A38 /* CMAppDelegate.m in Sources */,
+				F952DD4B1464B76A00A14A38 /* CMViewController.m in Sources */,
+				F96C49CB1466168E00B943BB /* CreateAcctViewController.m in Sources */,
+				F98980A51467EF590008EC4A /* VendorViewController.m in Sources */,
+				F98980A91467FB140008EC4A /* Vendor.m in Sources */,
+				F965532F1469235C00E138ED /* FriendsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F952DD4C1464B76A00A14A38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F952DD601464B76A00A14A38 /* CalimuchoParseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F952DD571464B76A00A14A38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F952DD2F1464B76A00A14A38 /* CalimuchoParse */;
+			targetProxy = F952DD561464B76A00A14A38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F952DD3D1464B76A00A14A38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F952DD3E1464B76A00A14A38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F952DD461464B76A00A14A38 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F952DD471464B76A00A14A38 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F952DD5B1464B76A00A14A38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F952DD5C1464B76A00A14A38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F952DD611464B76A00A14A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F952DD621464B76A00A14A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F952DD641464B76A00A14A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalimuchoParse/CalimuchoParse-Prefix.pch";
+				INFOPLIST_FILE = "CalimuchoParse/CalimuchoParse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F952DD651464B76A00A14A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalimuchoParse/CalimuchoParse-Prefix.pch";
+				INFOPLIST_FILE = "CalimuchoParse/CalimuchoParse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F952DD671464B76A00A14A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CalimuchoParse.app/CalimuchoParse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalimuchoParse/CalimuchoParse-Prefix.pch";
+				INFOPLIST_FILE = "CalimuchoParseTests/CalimuchoParseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F952DD681464B76A00A14A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CalimuchoParse.app/CalimuchoParse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalimuchoParse/CalimuchoParse-Prefix.pch";
+				INFOPLIST_FILE = "CalimuchoParseTests/CalimuchoParseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F952DD2A1464B76A00A14A38 /* Build configuration list for PBXProject "CalimuchoParse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F952DD611464B76A00A14A38 /* Debug */,
+				F952DD621464B76A00A14A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F952DD631464B76A00A14A38 /* Build configuration list for PBXNativeTarget "CalimuchoParse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F952DD641464B76A00A14A38 /* Debug */,
+				F952DD651464B76A00A14A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F952DD661464B76A00A14A38 /* Build configuration list for PBXNativeTarget "CalimuchoParseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F952DD671464B76A00A14A38 /* Debug */,
+				F952DD681464B76A00A14A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F952DD271464B76A00A14A38 /* Project object */;
+}
