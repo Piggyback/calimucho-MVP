@@ -33,6 +33,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3E8955F3146A1BB000A4AB70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E8955EB146A1BB000A4AB70 /* ZXingWidget.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ZXingWidget;
+		};
+		3E8955F5146A1BB000A4AB70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E8955EB146A1BB000A4AB70 /* ZXingWidget.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D60398D13DF7CAD006F4B51;
+			remoteInfo = ZXingTests;
+		};
 		F952DD561464B76A00A14A38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F952DD271464B76A00A14A38 /* Project object */;
@@ -43,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E8955EB146A1BB000A4AB70 /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = "../zxing-read-only/iphone/ZXingWidget/ZXingWidget.xcodeproj"; sourceTree = "<group>"; };
 		F952DD301464B76A00A14A38 /* CalimuchoParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalimuchoParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F952DD341464B76A00A14A38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F952DD361464B76A00A14A38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +123,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E8955EC146A1BB000A4AB70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E8955F4146A1BB000A4AB70 /* libZXingWidget.a */,
+				3E8955F6146A1BB000A4AB70 /* ZXingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E8955F8146A1BC300A4AB70 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				3E8955EB146A1BB000A4AB70 /* ZXingWidget.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
 		F952DD251464B76A00A14A38 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +147,7 @@
 				F952DD581464B76A00A14A38 /* CalimuchoParseTests */,
 				F952DD331464B76A00A14A38 /* Frameworks */,
 				F952DD311464B76A00A14A38 /* Products */,
+				3E8955F8146A1BC300A4AB70 /* Dependencies */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +285,12 @@
 			mainGroup = F952DD251464B76A00A14A38;
 			productRefGroup = F952DD311464B76A00A14A38 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3E8955EC146A1BB000A4AB70 /* Products */;
+					ProjectRef = 3E8955EB146A1BB000A4AB70 /* ZXingWidget.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F952DD2F1464B76A00A14A38 /* CalimuchoParse */,
@@ -259,6 +298,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3E8955F4146A1BB000A4AB70 /* libZXingWidget.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libZXingWidget.a;
+			remoteRef = 3E8955F3146A1BB000A4AB70 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3E8955F6146A1BB000A4AB70 /* ZXingTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZXingTests.octest;
+			remoteRef = 3E8955F5146A1BB000A4AB70 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F952DD2E1464B76A00A14A38 /* Resources */ = {
