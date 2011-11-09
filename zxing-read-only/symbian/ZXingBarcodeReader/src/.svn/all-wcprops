@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/src
+END
+ZXingBarcodeReaderAppView.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1378/trunk/symbian/ZXingBarcodeReader/src/ZXingBarcodeReaderAppView.cpp
+END
+DecodingOperations.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/src/DecodingOperations.cpp
+END
+ZXingBarcodeReaderAppUi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1336/trunk/symbian/ZXingBarcodeReader/src/ZXingBarcodeReaderAppUi.cpp
+END
+ZXingBarcodeReaderDocument.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1336/trunk/symbian/ZXingBarcodeReader/src/ZXingBarcodeReaderDocument.cpp
+END
+ZXingBarcodeReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1336/trunk/symbian/ZXingBarcodeReader/src/ZXingBarcodeReader.cpp
+END
+ZXingBarcodeReaderApplication.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1336/trunk/symbian/ZXingBarcodeReader/src/ZXingBarcodeReaderApplication.cpp
+END
+CameraImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/src/CameraImage.cpp
+END

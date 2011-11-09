@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1926/trunk/symbian/QQrDecoder
+END
+QQrDecoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/QQrDecoder.h
+END
+CameraImageWrapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/CameraImageWrapper.h
+END
+QQrDecoder.sis
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1925/trunk/symbian/QQrDecoder/QQrDecoder.sis
+END
+QQrDecoder.svg
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1339/trunk/symbian/QQrDecoder/QQrDecoder.svg
+END
+QQrDecoder.pro
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1925/trunk/symbian/QQrDecoder/QQrDecoder.pro
+END
+button.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/button.cpp
+END
+resources.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1926/trunk/symbian/QQrDecoder/resources.qrc
+END
+ZXing_Licence.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1339/trunk/symbian/QQrDecoder/ZXing_Licence.txt
+END
+Nokia_Licence.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/Nokia_Licence.txt
+END
+button.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/button.h
+END
+QCameraControllerWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1925/trunk/symbian/QQrDecoder/QCameraControllerWidget.cpp
+END
+QQrDecoder.ui
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/QQrDecoder.ui
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1339/trunk/symbian/QQrDecoder/main.cpp
+END
+MyVideoSurface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1925/trunk/symbian/QQrDecoder/MyVideoSurface.cpp
+END
+QCameraControllerWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1925/trunk/symbian/QQrDecoder/QCameraControllerWidget.h
+END
+QQrDecoder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/QQrDecoder.cpp
+END
+myvideosurface.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1925/trunk/symbian/QQrDecoder/myvideosurface.h
+END
+CameraImageWrapper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/CameraImageWrapper.cpp
+END

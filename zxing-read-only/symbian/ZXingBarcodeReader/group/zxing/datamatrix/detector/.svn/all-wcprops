@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/datamatrix/detector
+END
+Detector.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/datamatrix/detector/Detector.h
+END
+CornerPoint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/datamatrix/detector/CornerPoint.cpp
+END
+MonochromeRectangleDetector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/datamatrix/detector/MonochromeRectangleDetector.cpp
+END
+CornerPoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/datamatrix/detector/CornerPoint.h
+END
+Detector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/datamatrix/detector/Detector.cpp
+END
+MonochromeRectangleDetector.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/datamatrix/detector/MonochromeRectangleDetector.h
+END

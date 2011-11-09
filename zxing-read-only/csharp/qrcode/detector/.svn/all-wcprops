@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1951/trunk/csharp/qrcode/detector
+END
+AlignmentPattern.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1202/trunk/csharp/qrcode/detector/AlignmentPattern.cs
+END
+FinderPatternFinder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1202/trunk/csharp/qrcode/detector/FinderPatternFinder.cs
+END
+FinderPatternInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1202/trunk/csharp/qrcode/detector/FinderPatternInfo.cs
+END
+AlignmentPatternFinder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1202/trunk/csharp/qrcode/detector/AlignmentPatternFinder.cs
+END
+FinderPattern.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1202/trunk/csharp/qrcode/detector/FinderPattern.cs
+END
+Detector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1951/trunk/csharp/qrcode/detector/Detector.cs
+END

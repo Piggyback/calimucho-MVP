@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1827/trunk/actionscript/core/src/com/google/zxing
+END
+Result.as
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/Result.as
+END
+ReaderException.as
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/ReaderException.as
+END
+ResultMetadataType.as
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/ResultMetadataType.as
+END
+BinaryBitmap.as
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/BinaryBitmap.as
+END
+EncodeHintType.as
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/EncodeHintType.as
+END
+Binarizer.as
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/Binarizer.as
+END
+MultiFormatReader.as
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/MultiFormatReader.as
+END
+ResultPoint.as
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/ResultPoint.as
+END
+WriterException.as
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/WriterException.as
+END
+LuminanceSource.as
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/LuminanceSource.as
+END
+MultiFormatWriter.as
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/MultiFormatWriter.as
+END
+BufferedImageLuminanceSource.as
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/BufferedImageLuminanceSource.as
+END
+Reader.as
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/Reader.as
+END
+BarcodeFormat.as
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/BarcodeFormat.as
+END
+DecodeHintType.as
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/DecodeHintType.as
+END
+Writer.as
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/Writer.as
+END

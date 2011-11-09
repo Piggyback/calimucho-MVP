@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/camerawrapper/epoc32/release/armv5/lib
+END
+camerawrapper{000a0000}.dso
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/camerawrapper/epoc32/release/armv5/lib/camerawrapper%7B000a0000%7D.dso
+END
+camerawrapper{000a0000}.lib
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/camerawrapper/epoc32/release/armv5/lib/camerawrapper%7B000a0000%7D.lib
+END
+camerawrapper.dso
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/camerawrapper/epoc32/release/armv5/lib/camerawrapper.dso
+END
+camerawrapper.lib
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/camerawrapper/epoc32/release/armv5/lib/camerawrapper.lib
+END

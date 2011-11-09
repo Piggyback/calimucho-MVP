@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1951/trunk/csharp/client/result
+END
+URIResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1202/trunk/csharp/client/result/URIResultParser.cs
+END
+VCardResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1202/trunk/csharp/client/result/VCardResultParser.cs
+END
+ParsedResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1202/trunk/csharp/client/result/ParsedResult.cs
+END
+AddressBookDoCoMoResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1202/trunk/csharp/client/result/AddressBookDoCoMoResultParser.cs
+END
+ProductParsedResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1202/trunk/csharp/client/result/ProductParsedResult.cs
+END
+ParsedResultType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1202/trunk/csharp/client/result/ParsedResultType.cs
+END
+AbstractDoCoMoResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1202/trunk/csharp/client/result/AbstractDoCoMoResultParser.cs
+END
+URLTOResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1202/trunk/csharp/client/result/URLTOResultParser.cs
+END
+TextParsedResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1202/trunk/csharp/client/result/TextParsedResult.cs
+END
+BookmarkDoCoMoResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1202/trunk/csharp/client/result/BookmarkDoCoMoResultParser.cs
+END
+TelParsedResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1202/trunk/csharp/client/result/TelParsedResult.cs
+END
+VEventResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1951/trunk/csharp/client/result/VEventResultParser.cs
+END
+GeoResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1951/trunk/csharp/client/result/GeoResultParser.cs
+END
+ISBNParsedResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1202/trunk/csharp/client/result/ISBNParsedResult.cs
+END
+BizcardResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1202/trunk/csharp/client/result/BizcardResultParser.cs
+END
+SMSMMSResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1202/trunk/csharp/client/result/SMSMMSResultParser.cs
+END
+EmailAddressParsedResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1202/trunk/csharp/client/result/EmailAddressParsedResult.cs
+END
+ResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1202/trunk/csharp/client/result/ResultParser.cs
+END
+ProductResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1202/trunk/csharp/client/result/ProductResultParser.cs
+END
+URIParsedResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1202/trunk/csharp/client/result/URIParsedResult.cs
+END
+AddressBookParsedResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1202/trunk/csharp/client/result/AddressBookParsedResult.cs
+END
+TelResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1202/trunk/csharp/client/result/TelResultParser.cs
+END
+SMSParsedResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1202/trunk/csharp/client/result/SMSParsedResult.cs
+END
+AddressBookAUResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1202/trunk/csharp/client/result/AddressBookAUResultParser.cs
+END
+EmailDoCoMoResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1202/trunk/csharp/client/result/EmailDoCoMoResultParser.cs
+END
+ISBNResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1202/trunk/csharp/client/result/ISBNResultParser.cs
+END
+CalendarParsedResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1202/trunk/csharp/client/result/CalendarParsedResult.cs
+END
+GeoParsedResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1202/trunk/csharp/client/result/GeoParsedResult.cs
+END
+EmailAddressResultParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1202/trunk/csharp/client/result/EmailAddressResultParser.cs
+END

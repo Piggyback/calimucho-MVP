@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common
+END
+BitArray.as
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/BitArray.as
+END
+Collections.as
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/Collections.as
+END
+zxingByteArray.as
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/zxingByteArray.as
+END
+GlobalHistogramBinarizer.as
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/GlobalHistogramBinarizer.as
+END
+PerspectiveTransform.as
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/PerspectiveTransform.as
+END
+ByteMatrix.as
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/ByteMatrix.as
+END
+CharacterSetECI.as
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/CharacterSetECI.as
+END
+BitSource.as
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/BitSource.as
+END
+ECI.as
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/ECI.as
+END
+BitMatrix.as
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/BitMatrix.as
+END
+DecoderResult.as
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/DecoderResult.as
+END
+Comparator.as
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/Comparator.as
+END
+DetectorResult.as
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/DetectorResult.as
+END
+GridSampler.as
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/GridSampler.as
+END
+LocalBlockBinarizer.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/common/LocalBlockBinarizer.as
+END

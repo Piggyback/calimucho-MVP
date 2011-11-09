@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common
+END
+Point.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/Point.h
+END
+BitSource.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1339/trunk/symbian/QQrDecoder/zxing/common/BitSource.cpp
+END
+GreyscaleLuminanceSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/GreyscaleLuminanceSource.h
+END
+IllegalArgumentException.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/IllegalArgumentException.h
+END
+Counted.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1339/trunk/symbian/QQrDecoder/zxing/common/Counted.cpp
+END
+EdgeDetector.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/EdgeDetector.h
+END
+DetectorResult.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1339/trunk/symbian/QQrDecoder/zxing/common/DetectorResult.cpp
+END
+BitMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/BitMatrix.h
+END
+GridSampler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1341/trunk/symbian/QQrDecoder/zxing/common/GridSampler.cpp
+END
+DecoderResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/DecoderResult.h
+END
+Str.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/Str.h
+END
+GreyscaleRotatedLuminanceSource.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/GreyscaleRotatedLuminanceSource.cpp
+END
+Array.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1339/trunk/symbian/QQrDecoder/zxing/common/Array.cpp
+END
+LocalBlockBinarizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1339/trunk/symbian/QQrDecoder/zxing/common/LocalBlockBinarizer.h
+END
+BitArray.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/BitArray.h
+END
+GlobalHistogramBinarizer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/GlobalHistogramBinarizer.cpp
+END
+PerspectiveTransform.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/1481/trunk/symbian/QQrDecoder/zxing/common/PerspectiveTransform.cpp
+END
+HybridBinarizer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/HybridBinarizer.cpp
+END
+IllegalArgumentException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1339/trunk/symbian/QQrDecoder/zxing/common/IllegalArgumentException.cpp
+END
+GreyscaleLuminanceSource.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/GreyscaleLuminanceSource.cpp
+END
+EdgeDetector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1341/trunk/symbian/QQrDecoder/zxing/common/EdgeDetector.cpp
+END
+BitMatrix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/BitMatrix.cpp
+END
+DecoderResult.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1339/trunk/symbian/QQrDecoder/zxing/common/DecoderResult.cpp
+END
+BitSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/BitSource.h
+END
+Counted.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/Counted.h
+END
+Str.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1341/trunk/symbian/QQrDecoder/zxing/common/Str.cpp
+END
+LocalBlockBinarizer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1339/trunk/symbian/QQrDecoder/zxing/common/LocalBlockBinarizer.cpp
+END
+BitArray.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/BitArray.cpp
+END
+DetectorResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/DetectorResult.h
+END
+GridSampler.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/GridSampler.h
+END
+GreyscaleRotatedLuminanceSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/GreyscaleRotatedLuminanceSource.h
+END
+Array.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/Array.h
+END
+GlobalHistogramBinarizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/GlobalHistogramBinarizer.h
+END
+PerspectiveTransform.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/PerspectiveTransform.h
+END
+HybridBinarizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/common/HybridBinarizer.h
+END

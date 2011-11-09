@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode
+END
+FormatInformation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/FormatInformation.cpp
+END
+ErrorCorrectionLevel.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/ErrorCorrectionLevel.h
+END
+QRCodeReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/QRCodeReader.cpp
+END
+FormatInformation.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/FormatInformation.h
+END
+QRCodeReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/QRCodeReader.h
+END
+Version.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/Version.cpp
+END
+ErrorCorrectionLevel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/ErrorCorrectionLevel.cpp
+END
+Version.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/Version.h
+END

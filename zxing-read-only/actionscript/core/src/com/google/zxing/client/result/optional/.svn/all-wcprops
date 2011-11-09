@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional
+END
+NDEFSmartPosterParsedResult.as
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/NDEFSmartPosterParsedResult.as
+END
+MobileTagSimpleCalendarResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/MobileTagSimpleCalendarResultParser.as
+END
+MobileTagRichWebResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/MobileTagRichWebResultParser.as
+END
+MobileTagTelResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/MobileTagTelResultParser.as
+END
+MobileTagSimpleWebResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/MobileTagSimpleWebResultParser.as
+END
+MobileTagMMSResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/MobileTagMMSResultParser.as
+END
+NDEFSmartPosterResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/NDEFSmartPosterResultParser.as
+END
+NDEFTextResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/NDEFTextResultParser.as
+END
+AddressBookAUResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/AddressBookAUResultParser.as
+END
+MobileTagSMSResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/MobileTagSMSResultParser.as
+END
+AbstractMobileTagResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/AbstractMobileTagResultParser.as
+END
+MobileTagSimpleContactResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/MobileTagSimpleContactResultParser.as
+END
+MobileTagRichWebParsedResult.as
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/MobileTagRichWebParsedResult.as
+END
+NDEFURIResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/NDEFURIResultParser.as
+END
+NDEFRecord.as
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/NDEFRecord.as
+END
+AbstractNDEFResultParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/client/result/optional/AbstractNDEFResultParser.as
+END

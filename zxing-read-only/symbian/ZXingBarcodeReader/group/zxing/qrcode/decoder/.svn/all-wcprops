@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder
+END
+DecodedBitStreamParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder/DecodedBitStreamParser.cpp
+END
+BitMatrixParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder/BitMatrixParser.cpp
+END
+DecodedBitStreamParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder/DecodedBitStreamParser.h
+END
+DataBlock.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder/DataBlock.cpp
+END
+Mode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder/Mode.cpp
+END
+BitMatrixParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder/BitMatrixParser.h
+END
+DataMask.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder/DataMask.cpp
+END
+Decoder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder/Decoder.cpp
+END
+DataBlock.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder/DataBlock.h
+END
+Mode.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder/Mode.h
+END
+DataMask.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder/DataMask.h
+END
+Decoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/decoder/Decoder.h
+END

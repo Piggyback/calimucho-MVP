@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode
+END
+QRCodeReader.as
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/QRCodeReader.as
+END
+QRCodeWriter.as
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/QRCodeWriter.as
+END

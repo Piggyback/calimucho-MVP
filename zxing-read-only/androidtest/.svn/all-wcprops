@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/2009/trunk/androidtest
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1847/trunk/androidtest/default.properties
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2008/trunk/androidtest/project.properties
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2008/trunk/androidtest/proguard.cfg
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1988/trunk/androidtest/AndroidManifest.xml
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1023/trunk/androidtest/build.properties
+END
+ant.properties
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2008/trunk/androidtest/ant.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2009/trunk/androidtest/build.xml
+END

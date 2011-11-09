@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/2019/trunk/android
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1847/trunk/android/default.properties
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2008/trunk/android/project.properties
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2008/trunk/android/proguard.cfg
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2001/trunk/android/AndroidManifest.xml
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1087/trunk/android/build.properties
+END
+ant.properties
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2008/trunk/android/ant.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2009/trunk/android/build.xml
+END

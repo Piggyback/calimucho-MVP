@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned
+END
+UPCEANReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/UPCEANReader.cpp
+END
+OneDResultPoint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/OneDResultPoint.cpp
+END
+EAN13Reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/EAN13Reader.h
+END
+MultiFormatOneDReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/MultiFormatOneDReader.h
+END
+UPCEANReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/UPCEANReader.h
+END
+OneDResultPoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/OneDResultPoint.h
+END
+ITFReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/ITFReader.cpp
+END
+OneDReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/OneDReader.cpp
+END
+Code39Reader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/Code39Reader.cpp
+END
+ITFReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/ITFReader.h
+END
+UPCAReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/UPCAReader.cpp
+END
+OneDReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/OneDReader.h
+END
+Code39Reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/Code39Reader.h
+END
+EAN8Reader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/EAN8Reader.cpp
+END
+UPCEReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/UPCEReader.cpp
+END
+UPCAReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/UPCAReader.h
+END
+MultiFormatUPCEANReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/MultiFormatUPCEANReader.cpp
+END
+EAN8Reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/EAN8Reader.h
+END
+UPCEReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/UPCEReader.h
+END
+MultiFormatUPCEANReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/MultiFormatUPCEANReader.h
+END
+Code128Reader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/Code128Reader.cpp
+END
+EAN13Reader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/EAN13Reader.cpp
+END
+MultiFormatOneDReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/MultiFormatOneDReader.cpp
+END
+Code128Reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/oned/Code128Reader.h
+END

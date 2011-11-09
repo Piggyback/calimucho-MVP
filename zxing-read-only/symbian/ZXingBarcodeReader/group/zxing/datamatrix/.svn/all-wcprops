@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/datamatrix
+END
+DataMatrixReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/datamatrix/DataMatrixReader.cpp
+END
+Version.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/datamatrix/Version.cpp
+END
+DataMatrixReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/datamatrix/DataMatrixReader.h
+END
+Version.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/datamatrix/Version.h
+END

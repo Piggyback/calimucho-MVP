@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing
+END
+DecodeHints.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/DecodeHints.h
+END
+Exception.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1341/trunk/symbian/QQrDecoder/zxing/Exception.cpp
+END
+LuminanceSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/LuminanceSource.h
+END
+Reader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/Reader.cpp
+END
+Exception.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/Exception.h
+END
+ResultPointCallback.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/ResultPointCallback.cpp
+END
+Reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/Reader.h
+END
+BarcodeFormat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/BarcodeFormat.cpp
+END
+ResultPointCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/ResultPointCallback.h
+END
+BarcodeFormat.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/BarcodeFormat.h
+END
+Result.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1341/trunk/symbian/QQrDecoder/zxing/Result.cpp
+END
+BinaryBitmap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/BinaryBitmap.cpp
+END
+ReaderException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1339/trunk/symbian/QQrDecoder/zxing/ReaderException.cpp
+END
+Result.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/Result.h
+END
+Binarizer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/Binarizer.cpp
+END
+MultiFormatReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/MultiFormatReader.cpp
+END
+ReaderException.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/ReaderException.h
+END
+BinaryBitmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/BinaryBitmap.h
+END
+ResultPoint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/ResultPoint.cpp
+END
+DecodeHints.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/DecodeHints.cpp
+END
+Binarizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/Binarizer.h
+END
+MultiFormatReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/MultiFormatReader.h
+END
+LuminanceSource.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/LuminanceSource.cpp
+END
+ResultPoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1920/trunk/symbian/QQrDecoder/zxing/ResultPoint.h
+END
