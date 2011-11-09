@@ -15,4 +15,6 @@
 @property (strong, nonatomic) NSString *myEmail;
 @property (strong, nonatomic) UIWindow *window;
 
+- (void)getVendorData;
+
 @end

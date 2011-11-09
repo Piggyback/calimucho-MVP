@@ -1,5 +1,5 @@
 //
-//  FriendsViewController.h
+//  AddFriendsViewController.h
 //  CalimuchoParse
 //
 //  Created by Kimberly Hsiao on 11/8/11.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FriendsViewController : UIViewController {
+@interface AddFriendsViewController : UIViewController {
     IBOutlet UILabel *label;
     IBOutlet UITextField *friendEmail;
     NSString *myEmail;

@@ -1,19 +1,47 @@
 //
-//  VendorViewController.m
+//  ShowFriendsViewController.m
 //  CalimuchoParse
 //
-//  Created by Kimberly Hsiao on 11/7/11.
+//  Created by Kimberly Hsiao on 11/8/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "VendorViewController.h"
-#import "Vendor.h"
+#import "ShowFriendsViewController.h"
 #import "Parse/Parse.h"
+#import "Friend.h"
 #import "CMAppDelegate.h"
 
-@implementation VendorViewController
+@implementation ShowFriendsViewController
 
-@synthesize vendors;
+@synthesize friends;
+@synthesize myEmail;
+
+- (void)getFriendData {
+    
+    // fetch friends from parse and add to Friend class array
+    PFQuery *query = [PFQuery queryWithClassName:@"Friends"];
+    [query whereKey:@"uid1" equalTo:myEmail];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            //[condition lock];
+            friends = [NSMutableArray arrayWithCapacity:objects.count];
+            for (int i = 0; i < objects.count; i++) {
+                Friend *friend = [[Friend alloc] init];
+                PFObject *friendRow = [objects objectAtIndex:i];
+                friend.email = [friendRow objectForKey:@"uid2"];
+                [friends addObject:friend];
+            }
+            [condition signal];
+            //[condition unlock];
+        }
+        else {
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    NSString *s1 = [[friends objectAtIndex:0] email];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:s1 message:@"in getFriendData" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,10 +65,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // retrieve app delegate to copy vendor data over to local vendor array for display
+    
     CMAppDelegate *appDelegate = (CMAppDelegate *)[[UIApplication sharedApplication] delegate];
-    vendors = appDelegate.vendors;
+    myEmail = appDelegate.myEmail;
+    
+    [condition lock];
+    [self getFriendData];
+    
+    while ([friends count] != 4) {
+        [condition wait];
+        NSLog(@"hello testing! %d", [friends count]);
+    }
+    
+    [condition unlock];
+    
+    NSString *s1 = [[friends objectAtIndex:2] email];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:s1 message:@"in view did load" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -93,15 +134,14 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.vendors count];
+    return [self.friends count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VendorCell"];
-	Vendor *vendor = [self.vendors objectAtIndex:indexPath.row];
-	cell.textLabel.text = vendor.name;
-	cell.detailTextLabel.text = vendor.address;
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendCell"];
+	Friend *friend = [self.friends objectAtIndex:indexPath.row];
+	cell.textLabel.text = friend.email;
     return cell;
 }
 

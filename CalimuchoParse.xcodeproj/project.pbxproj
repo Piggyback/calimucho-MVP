@@ -19,7 +19,7 @@
 		F952DD551464B76A00A14A38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD361464B76A00A14A38 /* Foundation.framework */; };
 		F952DD5D1464B76A00A14A38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F952DD5B1464B76A00A14A38 /* InfoPlist.strings */; };
 		F952DD601464B76A00A14A38 /* CalimuchoParseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F952DD5F1464B76A00A14A38 /* CalimuchoParseTests.m */; };
-		F965532F1469235C00E138ED /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F965532E1469235C00E138ED /* FriendsViewController.m */; };
+		F965532F1469235C00E138ED /* AddFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F965532E1469235C00E138ED /* AddFriendsViewController.m */; };
 		F96C49BC1465FB2C00B943BB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49BB1465FB2C00B943BB /* Parse.framework */; };
 		F96C49BE1465FDD300B943BB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49BD1465FDD300B943BB /* AudioToolbox.framework */; };
 		F96C49C01465FDDC00B943BB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49BF1465FDDC00B943BB /* CFNetwork.framework */; };
@@ -28,8 +28,10 @@
 		F96C49C61465FE0500B943BB /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49C51465FE0500B943BB /* libz.1.1.3.dylib */; };
 		F96C49C81465FE0C00B943BB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49C71465FE0C00B943BB /* Security.framework */; };
 		F96C49CB1466168E00B943BB /* CreateAcctViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96C49CA1466168E00B943BB /* CreateAcctViewController.m */; };
+		F96D4B23146A0D9200194D6A /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = F96D4B22146A0D9200194D6A /* Friend.m */; };
 		F98980A51467EF590008EC4A /* VendorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98980A41467EF590008EC4A /* VendorViewController.m */; };
 		F98980A91467FB140008EC4A /* Vendor.m in Sources */ = {isa = PBXBuildFile; fileRef = F98980A81467FB140008EC4A /* Vendor.m */; };
+		F9FA8868146A06A400B2B24B /* ShowFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FA8867146A06A400B2B24B /* ShowFriendsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +63,8 @@
 		F952DD5C1464B76A00A14A38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F952DD5E1464B76A00A14A38 /* CalimuchoParseTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalimuchoParseTests.h; sourceTree = "<group>"; };
 		F952DD5F1464B76A00A14A38 /* CalimuchoParseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalimuchoParseTests.m; sourceTree = "<group>"; };
-		F965532D1469235C00E138ED /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
-		F965532E1469235C00E138ED /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		F965532D1469235C00E138ED /* AddFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsViewController.h; sourceTree = "<group>"; };
+		F965532E1469235C00E138ED /* AddFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsViewController.m; sourceTree = "<group>"; };
 		F96C49BB1465FB2C00B943BB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F96C49BD1465FDD300B943BB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F96C49BF1465FDDC00B943BB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -72,10 +74,14 @@
 		F96C49C71465FE0C00B943BB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F96C49C91466168E00B943BB /* CreateAcctViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAcctViewController.h; sourceTree = "<group>"; };
 		F96C49CA1466168E00B943BB /* CreateAcctViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAcctViewController.m; sourceTree = "<group>"; };
+		F96D4B21146A0D9200194D6A /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		F96D4B22146A0D9200194D6A /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 		F98980A31467EF590008EC4A /* VendorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendorViewController.h; sourceTree = "<group>"; };
 		F98980A41467EF590008EC4A /* VendorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendorViewController.m; sourceTree = "<group>"; };
 		F98980A71467FB140008EC4A /* Vendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vendor.h; sourceTree = "<group>"; };
 		F98980A81467FB140008EC4A /* Vendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vendor.m; sourceTree = "<group>"; };
+		F9FA8866146A06A400B2B24B /* ShowFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowFriendsViewController.h; sourceTree = "<group>"; };
+		F9FA8867146A06A400B2B24B /* ShowFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowFriendsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,17 +153,21 @@
 		F952DD3A1464B76A00A14A38 /* CalimuchoParse */ = {
 			isa = PBXGroup;
 			children = (
-				F96C49C91466168E00B943BB /* CreateAcctViewController.h */,
-				F96C49CA1466168E00B943BB /* CreateAcctViewController.m */,
+				F952DD461464B76A00A14A38 /* MainStoryboard.storyboard */,
 				F952DD431464B76A00A14A38 /* CMAppDelegate.h */,
 				F952DD441464B76A00A14A38 /* CMAppDelegate.m */,
-				F952DD461464B76A00A14A38 /* MainStoryboard.storyboard */,
-				F965532D1469235C00E138ED /* FriendsViewController.h */,
-				F965532E1469235C00E138ED /* FriendsViewController.m */,
-				F98980A31467EF590008EC4A /* VendorViewController.h */,
-				F98980A41467EF590008EC4A /* VendorViewController.m */,
 				F952DD491464B76A00A14A38 /* CMViewController.h */,
 				F952DD4A1464B76A00A14A38 /* CMViewController.m */,
+				F96C49C91466168E00B943BB /* CreateAcctViewController.h */,
+				F96C49CA1466168E00B943BB /* CreateAcctViewController.m */,
+				F98980A31467EF590008EC4A /* VendorViewController.h */,
+				F98980A41467EF590008EC4A /* VendorViewController.m */,
+				F9FA8866146A06A400B2B24B /* ShowFriendsViewController.h */,
+				F9FA8867146A06A400B2B24B /* ShowFriendsViewController.m */,
+				F965532D1469235C00E138ED /* AddFriendsViewController.h */,
+				F965532E1469235C00E138ED /* AddFriendsViewController.m */,
+				F96D4B21146A0D9200194D6A /* Friend.h */,
+				F96D4B22146A0D9200194D6A /* Friend.m */,
 				F98980A71467FB140008EC4A /* Vendor.h */,
 				F98980A81467FB140008EC4A /* Vendor.m */,
 				F952DD3B1464B76A00A14A38 /* Supporting Files */,
@@ -307,7 +317,9 @@
 				F96C49CB1466168E00B943BB /* CreateAcctViewController.m in Sources */,
 				F98980A51467EF590008EC4A /* VendorViewController.m in Sources */,
 				F98980A91467FB140008EC4A /* Vendor.m in Sources */,
-				F965532F1469235C00E138ED /* FriendsViewController.m in Sources */,
+				F965532F1469235C00E138ED /* AddFriendsViewController.m in Sources */,
+				F9FA8868146A06A400B2B24B /* ShowFriendsViewController.m in Sources */,
+				F96D4B23146A0D9200194D6A /* Friend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

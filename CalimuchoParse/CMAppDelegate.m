@@ -17,8 +17,7 @@
 @synthesize myEmail;
 @synthesize window = _window;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (void)getVendorData {
     // fetch vendors from parse and add to Vendor class array
     PFQuery *query = [PFQuery queryWithClassName:@"Vendors"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -39,8 +38,12 @@
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
-    
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Override point for customization after application launch.
+    [self getVendorData];
     return YES;
 }
 							

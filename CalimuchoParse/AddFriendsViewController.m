@@ -1,16 +1,16 @@
 //
-//  FriendsViewController.m
+//  AddFriendsViewController.m
 //  CalimuchoParse
 //
 //  Created by Kimberly Hsiao on 11/8/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "FriendsViewController.h"
+#import "AddFriendsViewController.h"
 #import "Parse/Parse.h"
 #import "CMAppDelegate.h"
 
-@implementation FriendsViewController
+@implementation AddFriendsViewController
 
 - (IBAction)addFriend:(id)sender {    
     PFObject *newFriend = [[PFObject alloc] initWithClassName:@"Friends"];

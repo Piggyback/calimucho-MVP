@@ -11,9 +11,9 @@
 @interface Vendor : NSObject
 
 @property (atomic, assign) int vid;
-@property (atomic, retain) NSString* name;
-@property (atomic, retain) NSString* address;
-@property (atomic, retain) NSString* hours;
+@property (atomic, retain) NSString *name;
+@property (atomic, retain) NSString *address;
+@property (atomic, retain) NSString *hours;
 @property (atomic, assign) int phone;
 
 @end
