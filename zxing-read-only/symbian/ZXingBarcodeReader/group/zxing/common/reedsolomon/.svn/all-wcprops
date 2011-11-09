@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/common/reedsolomon
+END
+GF256.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/common/reedsolomon/GF256.h
+END
+ReedSolomonDecoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/common/reedsolomon/ReedSolomonDecoder.h
+END
+GF256Poly.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/common/reedsolomon/GF256Poly.h
+END
+ReedSolomonException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/common/reedsolomon/ReedSolomonException.cpp
+END
+GF256.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/common/reedsolomon/GF256.cpp
+END
+ReedSolomonException.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/common/reedsolomon/ReedSolomonException.h
+END
+ReedSolomonDecoder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/common/reedsolomon/ReedSolomonDecoder.cpp
+END
+GF256Poly.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/common/reedsolomon/GF256Poly.cpp
+END

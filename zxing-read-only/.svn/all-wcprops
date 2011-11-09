@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 24
+/svn/!svn/ver/2019/trunk
+END
+NOTICE
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/1897/trunk/NOTICE
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/1949/trunk/AUTHORS
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/1816/trunk/CHANGES
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/455/trunk/COPYING
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/2002/trunk/build.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/2017/trunk/build.xml
+END

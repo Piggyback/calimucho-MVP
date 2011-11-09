@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/1951/trunk/csharp/common
+END
+BitArray.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1202/trunk/csharp/common/BitArray.cs
+END
+Collections.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1202/trunk/csharp/common/Collections.cs
+END
+DefaultGridSampler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1951/trunk/csharp/common/DefaultGridSampler.cs
+END
+GlobalHistogramBinarizer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1202/trunk/csharp/common/GlobalHistogramBinarizer.cs
+END
+PerspectiveTransform.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1202/trunk/csharp/common/PerspectiveTransform.cs
+END
+HybridBinarizer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1202/trunk/csharp/common/HybridBinarizer.cs
+END
+ByteMatrix.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1951/trunk/csharp/common/ByteMatrix.cs
+END
+CharacterSetECI.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1202/trunk/csharp/common/CharacterSetECI.cs
+END
+BitSource.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1202/trunk/csharp/common/BitSource.cs
+END
+ECI.cs
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1202/trunk/csharp/common/ECI.cs
+END
+ByteArray.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1202/trunk/csharp/common/ByteArray.cs
+END
+BitMatrix.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1202/trunk/csharp/common/BitMatrix.cs
+END
+DecoderResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1202/trunk/csharp/common/DecoderResult.cs
+END
+Comparator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1202/trunk/csharp/common/Comparator.cs
+END
+DetectorResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1202/trunk/csharp/common/DetectorResult.cs
+END
+GridSampler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1202/trunk/csharp/common/GridSampler.cs
+END

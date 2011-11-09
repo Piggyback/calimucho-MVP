@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E7DC813146A72160068CBAD /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7DC80D146A719C0068CBAD /* libZXingWidget.a */; };
+		3E398BC5146A7BA900B25530 /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E398BC2146A7B9C00B25530 /* libZXingWidget.a */; };
 		3E8955FD146A1D3700A4AB70 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8955FC146A1D3700A4AB70 /* AVFoundation.framework */; };
 		3E8955FF146A1D4300A4AB70 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8955FE146A1D4300A4AB70 /* CoreVideo.framework */; };
 		3E895601146A1D4C00A4AB70 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E895600146A1D4C00A4AB70 /* CoreMedia.framework */; };
@@ -41,23 +41,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3E7DC80C146A719C0068CBAD /* PBXContainerItemProxy */ = {
+		3E398BC1146A7B9C00B25530 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3E7DC804146A719B0068CBAD /* ZXingWidget.xcodeproj */;
+			containerPortal = 3E398BB9146A7B9B00B25530 /* ZXingWidget.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = ZXingWidget;
 		};
-		3E7DC80E146A719C0068CBAD /* PBXContainerItemProxy */ = {
+		3E398BC3146A7B9C00B25530 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3E7DC804146A719B0068CBAD /* ZXingWidget.xcodeproj */;
+			containerPortal = 3E398BB9146A7B9B00B25530 /* ZXingWidget.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1D60398D13DF7CAD006F4B51;
 			remoteInfo = ZXingTests;
 		};
-		3E7DC814146A72260068CBAD /* PBXContainerItemProxy */ = {
+		3E398BC6146A7BAE00B25530 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3E7DC804146A719B0068CBAD /* ZXingWidget.xcodeproj */;
+			containerPortal = 3E398BB9146A7B9B00B25530 /* ZXingWidget.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = ZXingWidget;
@@ -72,7 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3E7DC804146A719B0068CBAD /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = "../zxing-read-only/iphone/ZXingWidget/ZXingWidget.xcodeproj"; sourceTree = "<group>"; };
+		3E398BB9146A7B9B00B25530 /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = "zxing-read-only/iphone/ZXingWidget/ZXingWidget.xcodeproj"; sourceTree = "<group>"; };
 		3E8955FC146A1D3700A4AB70 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3E8955FE146A1D4300A4AB70 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		3E895600146A1D4C00A4AB70 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -121,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E7DC813146A72160068CBAD /* libZXingWidget.a in Frameworks */,
+				3E398BC5146A7BA900B25530 /* libZXingWidget.a in Frameworks */,
 				3E895607146A1D6300A4AB70 /* AddressBookUI.framework in Frameworks */,
 				3E895605146A1D5D00A4AB70 /* AddressBook.framework in Frameworks */,
 				3E895603146A1D5500A4AB70 /* libiconv.dylib in Frameworks */,
@@ -153,11 +153,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E7DC805146A719B0068CBAD /* Products */ = {
+		3E398BBA146A7B9B00B25530 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3E7DC80D146A719C0068CBAD /* libZXingWidget.a */,
-				3E7DC80F146A719C0068CBAD /* ZXingTests.octest */,
+				3E398BC2146A7B9C00B25530 /* libZXingWidget.a */,
+				3E398BC4146A7B9C00B25530 /* ZXingTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,7 +165,7 @@
 		3E8955F8146A1BC300A4AB70 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				3E7DC804146A719B0068CBAD /* ZXingWidget.xcodeproj */,
+				3E398BB9146A7B9B00B25530 /* ZXingWidget.xcodeproj */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
@@ -280,7 +280,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3E7DC815146A72260068CBAD /* PBXTargetDependency */,
+				3E398BC7146A7BAE00B25530 /* PBXTargetDependency */,
 			);
 			name = CalimuchoParse;
 			productName = CalimuchoParse;
@@ -326,8 +326,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3E7DC805146A719B0068CBAD /* Products */;
-					ProjectRef = 3E7DC804146A719B0068CBAD /* ZXingWidget.xcodeproj */;
+					ProductGroup = 3E398BBA146A7B9B00B25530 /* Products */;
+					ProjectRef = 3E398BB9146A7B9B00B25530 /* ZXingWidget.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -339,18 +339,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3E7DC80D146A719C0068CBAD /* libZXingWidget.a */ = {
+		3E398BC2146A7B9C00B25530 /* libZXingWidget.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libZXingWidget.a;
-			remoteRef = 3E7DC80C146A719C0068CBAD /* PBXContainerItemProxy */;
+			remoteRef = 3E398BC1146A7B9C00B25530 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3E7DC80F146A719C0068CBAD /* ZXingTests.octest */ = {
+		3E398BC4146A7B9C00B25530 /* ZXingTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ZXingTests.octest;
-			remoteRef = 3E7DC80E146A719C0068CBAD /* PBXContainerItemProxy */;
+			remoteRef = 3E398BC3146A7B9C00B25530 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -418,10 +418,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3E7DC815146A72260068CBAD /* PBXTargetDependency */ = {
+		3E398BC7146A7BAE00B25530 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZXingWidget;
-			targetProxy = 3E7DC814146A72260068CBAD /* PBXContainerItemProxy */;
+			targetProxy = 3E398BC6146A7BAE00B25530 /* PBXContainerItemProxy */;
 		};
 		F952DD571464B76A00A14A38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -513,8 +513,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalimuchoParse/CalimuchoParse-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"../zxing-read-only/cpp/core/src",
-					"../zxing-read-only/iphone/ZXingWidget/Classes/**",
+					"./zxing-read-only/cpp/core/src/",
+					"./zxing-read-only/iphone/ZXingWidget/Classes/**",
 				);
 				INFOPLIST_FILE = "CalimuchoParse/CalimuchoParse-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,8 +532,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalimuchoParse/CalimuchoParse-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"../zxing-read-only/cpp/core/src",
-					"../zxing-read-only/iphone/ZXingWidget/Classes/**",
+					"./zxing-read-only/cpp/core/src/",
+					"./zxing-read-only/iphone/ZXingWidget/Classes/**",
 				);
 				INFOPLIST_FILE = "CalimuchoParse/CalimuchoParse-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";

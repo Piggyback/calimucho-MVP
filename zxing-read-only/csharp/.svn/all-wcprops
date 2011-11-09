@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/1951/trunk/csharp
+END
+Writer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/1202/trunk/csharp/Writer.cs
+END
+Result.cs
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/1202/trunk/csharp/Result.cs
+END
+ResultMetadataType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1202/trunk/csharp/ResultMetadataType.cs
+END
+ReaderException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1202/trunk/csharp/ReaderException.cs
+END
+BinaryBitmap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1202/trunk/csharp/BinaryBitmap.cs
+END
+EncodeHintType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1202/trunk/csharp/EncodeHintType.cs
+END
+Binarizer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1202/trunk/csharp/Binarizer.cs
+END
+MultiFormatReader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1951/trunk/csharp/MultiFormatReader.cs
+END
+RGBLuminanceSource.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1202/trunk/csharp/RGBLuminanceSource.cs
+END
+ResultPoint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1202/trunk/csharp/ResultPoint.cs
+END
+zxing.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1765/trunk/csharp/zxing.csproj
+END
+AssemblyInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1202/trunk/csharp/AssemblyInfo.cs
+END
+WriterException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1202/trunk/csharp/WriterException.cs
+END
+LuminanceSource.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1202/trunk/csharp/LuminanceSource.cs
+END
+MultiFormatWriter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1202/trunk/csharp/MultiFormatWriter.cs
+END
+Reader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/1202/trunk/csharp/Reader.cs
+END
+SupportClass.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1202/trunk/csharp/SupportClass.cs
+END
+ResultPointCallback.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1202/trunk/csharp/ResultPointCallback.cs
+END
+BarcodeFormat.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1202/trunk/csharp/BarcodeFormat.cs
+END
+DecodeHintType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1202/trunk/csharp/DecodeHintType.cs
+END

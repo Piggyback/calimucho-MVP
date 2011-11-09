@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector
+END
+Detector.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/Detector.h
+END
+AlignmentPattern.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/AlignmentPattern.h
+END
+QREdgeDetector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/QREdgeDetector.cpp
+END
+FinderPatternInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/FinderPatternInfo.cpp
+END
+FinderPatternFinder.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/FinderPatternFinder.h
+END
+AlignmentPatternFinder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/AlignmentPatternFinder.cpp
+END
+FinderPattern.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/FinderPattern.cpp
+END
+QREdgeDetector.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/QREdgeDetector.h
+END
+FinderPatternInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/FinderPatternInfo.h
+END
+Detector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/Detector.cpp
+END
+AlignmentPatternFinder.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/AlignmentPatternFinder.h
+END
+FinderPattern.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/FinderPattern.h
+END
+AlignmentPattern.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/AlignmentPattern.cpp
+END
+FinderPatternFinder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/zxing/qrcode/detector/FinderPatternFinder.cpp
+END

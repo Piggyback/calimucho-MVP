@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1951/trunk/csharp/datamatrix/decoder
+END
+DecodedBitStreamParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1202/trunk/csharp/datamatrix/decoder/DecodedBitStreamParser.cs
+END
+BitMatrixParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1202/trunk/csharp/datamatrix/decoder/BitMatrixParser.cs
+END
+DataBlock.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1202/trunk/csharp/datamatrix/decoder/DataBlock.cs
+END
+Decoder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1951/trunk/csharp/datamatrix/decoder/Decoder.cs
+END
+Version.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1202/trunk/csharp/datamatrix/decoder/Version.cs
+END

@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder
+END
+DecodedBitStreamParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/DecodedBitStreamParser.as
+END
+BitMatrixParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/BitMatrixParser.as
+END
+DataMaskBase.as
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/DataMaskBase.as
+END
+DataBlock.as
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/DataBlock.as
+END
+Mode.as
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/Mode.as
+END
+ECBlocks.as
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/ECBlocks.as
+END
+DataMask.as
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/DataMask.as
+END
+Version.as
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/Version.as
+END
+ECB.as
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/ECB.as
+END
+FormatInformation.as
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/FormatInformation.as
+END
+DataMask000.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/DataMask000.as
+END
+Decoder.as
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/Decoder.as
+END
+DataMask001.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/DataMask001.as
+END
+DataMask100.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/DataMask100.as
+END
+DataMask010.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/DataMask010.as
+END
+DataMask011.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/DataMask011.as
+END
+DataMask110.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/DataMask110.as
+END
+DataMask101.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/DataMask101.as
+END
+DataMask111.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/DataMask111.as
+END
+ErrorCorrectionLevel.as
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/decoder/ErrorCorrectionLevel.as
+END

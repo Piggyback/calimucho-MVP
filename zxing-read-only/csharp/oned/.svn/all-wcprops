@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/1951/trunk/csharp/oned
+END
+UPCAReader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1202/trunk/csharp/oned/UPCAReader.cs
+END
+EAN8Reader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1202/trunk/csharp/oned/EAN8Reader.cs
+END
+UPCEReader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1202/trunk/csharp/oned/UPCEReader.cs
+END
+MultiFormatUPCEANReader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1951/trunk/csharp/oned/MultiFormatUPCEANReader.cs
+END
+Code39Writer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1765/trunk/csharp/oned/Code39Writer.cs
+END
+Code128Reader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1202/trunk/csharp/oned/Code128Reader.cs
+END
+EAN8Writer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1202/trunk/csharp/oned/EAN8Writer.cs
+END
+EAN13Reader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1202/trunk/csharp/oned/EAN13Reader.cs
+END
+MultiFormatOneDReader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1951/trunk/csharp/oned/MultiFormatOneDReader.cs
+END
+UPCEANReader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1202/trunk/csharp/oned/UPCEANReader.cs
+END
+EAN13Writer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1202/trunk/csharp/oned/EAN13Writer.cs
+END
+ITFReader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1202/trunk/csharp/oned/ITFReader.cs
+END
+UPCEANWriter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1202/trunk/csharp/oned/UPCEANWriter.cs
+END
+OneDReader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1951/trunk/csharp/oned/OneDReader.cs
+END
+Code39Reader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1765/trunk/csharp/oned/Code39Reader.cs
+END

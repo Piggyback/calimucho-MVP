@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1951/trunk/csharp/qrcode/encoder
+END
+QRCode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1202/trunk/csharp/qrcode/encoder/QRCode.cs
+END
+Encoder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1951/trunk/csharp/qrcode/encoder/Encoder.cs
+END
+BitVector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1202/trunk/csharp/qrcode/encoder/BitVector.cs
+END
+MatrixUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1202/trunk/csharp/qrcode/encoder/MatrixUtil.cs
+END
+BlockPair.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1202/trunk/csharp/qrcode/encoder/BlockPair.cs
+END
+MaskUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1202/trunk/csharp/qrcode/encoder/MaskUtil.cs
+END

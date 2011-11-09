@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1844/trunk/actionscript/core/test/com/google/zxing
+END
+EncodeDecodeEAN8Test.as
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1844/trunk/actionscript/core/test/com/google/zxing/EncodeDecodeEAN8Test.as
+END
+IntegrationTestsSuite.as
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1842/trunk/actionscript/core/test/com/google/zxing/IntegrationTestsSuite.as
+END

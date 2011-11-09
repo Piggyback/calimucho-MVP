@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader
+END
+ZXing_Licence.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/ZXing_Licence.txt
+END
+Nokia_Licence.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/Nokia_Licence.txt
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/.project
+END
+changes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1336/trunk/symbian/ZXingBarcodeReader/changes.txt
+END
+.cproject
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/.cproject
+END

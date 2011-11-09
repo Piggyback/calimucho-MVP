@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/camerawrapper/epoc32/include
+END
+cameraengine.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/camerawrapper/epoc32/include/cameraengine.h
+END
+cameraengineobserver.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/camerawrapper/epoc32/include/cameraengineobserver.h
+END

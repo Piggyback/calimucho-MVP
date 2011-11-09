@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1827/trunk/actionscript/core/src/com/google/zxing/multi
+END
+ByQuadrantReader.as
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/multi/ByQuadrantReader.as
+END
+MultipleBarcodeReader.as
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/multi/MultipleBarcodeReader.as
+END
+GenericMultipleBarcodeReader.as
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1827/trunk/actionscript/core/src/com/google/zxing/multi/GenericMultipleBarcodeReader.as
+END

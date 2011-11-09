@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1202/trunk/csharp/common/reedsolomon
+END
+ReedSolomonDecoder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1202/trunk/csharp/common/reedsolomon/ReedSolomonDecoder.cs
+END
+GF256Poly.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1202/trunk/csharp/common/reedsolomon/GF256Poly.cs
+END
+ReedSolomonException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1202/trunk/csharp/common/reedsolomon/ReedSolomonException.cs
+END
+ReedSolomonEncoder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1202/trunk/csharp/common/reedsolomon/ReedSolomonEncoder.cs
+END
+GF256.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1202/trunk/csharp/common/reedsolomon/GF256.cs
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group
+END
+ABLD.BAT
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/ABLD.BAT
+END
+ZXingBarcodeReader.mmp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1481/trunk/symbian/ZXingBarcodeReader/group/ZXingBarcodeReader.mmp
+END
+bld.inf
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1336/trunk/symbian/ZXingBarcodeReader/group/bld.inf
+END
+Icons_scalable_dc.mk
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/group/Icons_scalable_dc.mk
+END

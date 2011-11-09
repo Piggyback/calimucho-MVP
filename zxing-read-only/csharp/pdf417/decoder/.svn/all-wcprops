@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1202/trunk/csharp/pdf417/decoder
+END
+DecodedBitStreamParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1202/trunk/csharp/pdf417/decoder/DecodedBitStreamParser.cs
+END
+BitMatrixParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1202/trunk/csharp/pdf417/decoder/BitMatrixParser.cs
+END
+Decoder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1202/trunk/csharp/pdf417/decoder/Decoder.cs
+END

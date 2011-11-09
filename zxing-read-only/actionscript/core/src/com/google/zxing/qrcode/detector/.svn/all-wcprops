@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/detector
+END
+FinderPatternFinder.as
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/detector/FinderPatternFinder.as
+END
+FinderPatternInfo.as
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/detector/FinderPatternInfo.as
+END
+ClosestToAverageComparator.as
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/detector/ClosestToAverageComparator.as
+END
+AlignmentPatternFinder.as
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/detector/AlignmentPatternFinder.as
+END
+FinderPattern.as
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/detector/FinderPattern.as
+END
+CenterComparator.as
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/detector/CenterComparator.as
+END
+Detector.as
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/detector/Detector.as
+END
+AlignmentPattern.as
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/detector/AlignmentPattern.as
+END

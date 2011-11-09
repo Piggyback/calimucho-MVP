@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/datamatrix/decoder
+END
+DecodedBitStreamParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/datamatrix/decoder/DecodedBitStreamParser.as
+END
+BitMatrixParser.as
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/datamatrix/decoder/BitMatrixParser.as
+END
+DataBlock.as
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/datamatrix/decoder/DataBlock.as
+END
+ECBlocks.as
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/datamatrix/decoder/ECBlocks.as
+END
+Version.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/datamatrix/decoder/Version.as
+END
+Decoder.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/datamatrix/decoder/Decoder.as
+END
+ECB.as
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/datamatrix/decoder/ECB.as
+END

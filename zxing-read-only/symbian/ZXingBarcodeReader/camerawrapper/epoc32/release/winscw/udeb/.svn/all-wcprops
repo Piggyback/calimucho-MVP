@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/camerawrapper/epoc32/release/winscw/udeb
+END
+CamAutoFocus.dll
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/camerawrapper/epoc32/release/winscw/udeb/CamAutoFocus.dll
+END
+camerawrapper.dll
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/camerawrapper/epoc32/release/winscw/udeb/camerawrapper.dll
+END
+camerawrapper.lib
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1332/trunk/symbian/ZXingBarcodeReader/camerawrapper/epoc32/release/winscw/udeb/camerawrapper.lib
+END

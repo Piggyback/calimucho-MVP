@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/encoder
+END
+QRCode.as
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/encoder/QRCode.as
+END
+Encoder.as
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/encoder/Encoder.as
+END
+BitVector.as
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/encoder/BitVector.as
+END
+MatrixUtil.as
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/encoder/MatrixUtil.as
+END
+BlockPair.as
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/encoder/BlockPair.as
+END
+MaskUtil.as
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1116/trunk/actionscript/core/src/com/google/zxing/qrcode/encoder/MaskUtil.as
+END

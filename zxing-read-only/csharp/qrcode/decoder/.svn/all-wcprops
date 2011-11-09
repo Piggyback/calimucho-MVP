@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1951/trunk/csharp/qrcode/decoder
+END
+FormatInformation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1202/trunk/csharp/qrcode/decoder/FormatInformation.cs
+END
+DecodedBitStreamParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1951/trunk/csharp/qrcode/decoder/DecodedBitStreamParser.cs
+END
+BitMatrixParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1202/trunk/csharp/qrcode/decoder/BitMatrixParser.cs
+END
+Mode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1202/trunk/csharp/qrcode/decoder/Mode.cs
+END
+DataBlock.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1202/trunk/csharp/qrcode/decoder/DataBlock.cs
+END
+Decoder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1951/trunk/csharp/qrcode/decoder/Decoder.cs
+END
+Version.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1951/trunk/csharp/qrcode/decoder/Version.cs
+END
+DataMask.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1202/trunk/csharp/qrcode/decoder/DataMask.cs
+END
+ErrorCorrectionLevel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1202/trunk/csharp/qrcode/decoder/ErrorCorrectionLevel.cs
+END
