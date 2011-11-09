@@ -8,7 +8,7 @@
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="CMViewController" sceneMemberID="viewController">
+                <viewController id="2" userLabel="SignIn" customClass="CMViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3" customClass="UIControl">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -66,7 +66,6 @@
                                 </state>
                                 <connections>
                                     <action selector="signIn:" destination="2" eventType="touchUpInside" id="gca-Wc-gq1"/>
-                                    <segue destination="jS9-AC-47r" kind="modal" id="9rg-q1-y9O"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="don't have an account?" lineBreakMode="tailTruncation" minimumFontSize="10" id="qXs-7s-TGn">
@@ -102,7 +101,7 @@
         <scene sceneID="U29-kb-gNF">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POy-HR-uYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="EMu-Sl-wcm" customClass="CreateAcctViewController" sceneMemberID="viewController">
+                <viewController id="EMu-Sl-wcm" userLabel="CreateAcct" customClass="CreateAcctViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OjZ-nk-8QG" customClass="UIControl">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -138,7 +137,6 @@
                                 </state>
                                 <connections>
                                     <action selector="createAcct:" destination="EMu-Sl-wcm" eventType="touchUpInside" id="G8Z-Yr-cCs"/>
-                                    <segue destination="jS9-AC-47r" kind="modal" id="JiU-Kk-tNC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -233,7 +231,7 @@
         <scene sceneID="LjH-EJ-Qf3">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pn9-L4-CVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController definesPresentationContext="YES" id="jS9-AC-47r" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="home" definesPresentationContext="YES" id="jS9-AC-47r" userLabel="home" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Test" id="hNG-eb-G9G"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="GJM-oc-WV5">
@@ -440,7 +438,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="9rg-q1-y9O"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -20,8 +20,12 @@
                     // successful login. store email of current user
                     CMAppDelegate *appDelegate = (CMAppDelegate *)[[UIApplication sharedApplication] delegate];
                     appDelegate.myEmail = email.text;
+                    
+                    // only go to next screen if login is successful
+                    UITabBarController *homeViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
+                    [self presentModalViewController:homeViewController animated:YES];
                 } else {
-                    // failed login
+                    // failed login. stay on same screen
                     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Email and password did not match" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [alert show];
                 }

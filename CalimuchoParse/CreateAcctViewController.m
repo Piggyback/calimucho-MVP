@@ -14,32 +14,40 @@
 
 - (IBAction)createAcct:(id)sender
 {    
-    PFUser *user = [[PFUser alloc] init];
-    user.username = email.text;
-    user.password = password.text;
+    NSString *regex = @".*@.*";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     
-    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {
-            // account doesnt exist yet. check email validity
-            NSString *regex = @".*@.*";
-            NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
-            
-            // email is not valid. show alert
-            if (![pred evaluateWithObject:email.text]){
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Account Creation Failed" message:@"Invalid Email" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [alert show];
-            } else {
-                // email is valid. store email of current user for reference
+    // email is not valid. show alert
+    if (![pred evaluateWithObject:email.text]){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Account Creation Failed" message:@"Invalid Email" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
+    
+    // email is valid. try to add user to user db
+    else {
+        PFUser *user = [[PFUser alloc] init];
+        user.username = email.text;
+        user.password = password.text;
+    
+        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (!error) {
+                // account successfully added. store email of current user for reference
                 CMAppDelegate *appDelegate = (CMAppDelegate *)[[UIApplication sharedApplication] delegate];
                 appDelegate.myEmail = email.text;
+                
+                // display next view
+                UITabBarController *homeViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
+                [self presentModalViewController:homeViewController animated:YES];
             }
-        } else {
-            // account creation failed. show alert
-            NSString *errorString = [[error userInfo] objectForKey:@"error"];
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Account Creation Failed" message:errorString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
-        }
-    }];
+            
+            else {
+                // account creation failed. show alert
+                NSString *errorString = [[error userInfo] objectForKey:@"error"];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Account Creation Failed" message:errorString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                [alert show];
+            }
+        }];
+    }
 }
 
 - (IBAction)textFieldReturn:(id)sender
