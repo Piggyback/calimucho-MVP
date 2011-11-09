@@ -8,6 +8,7 @@
 
 #import "QRReaderViewController.h"
 #import "QRCodeReader.h"
+#import "Parse/Parse.h"
 
 @interface QRReaderViewController()
 @end
@@ -78,11 +79,36 @@
 
 - (void)zxingController:(ZXingWidgetController*)controller didScanResult:(NSString *)result {
     self.resultsToDisplay = result;
-    if (self.isViewLoaded) {
-        [resultsView setText:resultsToDisplay];
-        [resultsView setNeedsDisplay];
-    }
-    [self dismissModalViewControllerAnimated:NO];
+    
+    // validate qr code with vendor table through parse
+    PFQuery *query = [PFQuery queryWithClassName:@"Vendors"];
+    [query whereKey:@"name" equalTo:resultsToDisplay];
+    [query countObjectsInBackgroundWithBlock:^(int count, NSError *error) {
+        if (!error) {
+            // The count request succeeded. Log the count
+            NSLog(@"Count request succeeded");
+            
+            if (self.isViewLoaded) {
+                NSString *vendorValid = @"Vendor is in database!";
+                NSString *vendorNotValid = @"Vendor is NOT in database!";
+                NSString *vendorValidation;
+                
+                if (count == 1) {
+                    vendorValidation = vendorValid;
+                } else {
+                    vendorValidation = vendorNotValid;
+                }
+                
+                NSString *setText = [NSString stringWithFormat:@"QR message: %@\n%@", resultsToDisplay, vendorValidation];
+                [resultsView setText:setText];
+                [resultsView setNeedsDisplay];
+            }
+            [self dismissModalViewControllerAnimated:NO];
+        } else {
+            // The request failed
+            NSLog(@"Count request FAILED!");
+        }
+    }];
 }
 
 - (void)zxingControllerDidCancel:(ZXingWidgetController*)controller {
