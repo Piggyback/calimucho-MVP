@@ -72,11 +72,12 @@
     [condition lock];
     [self getFriendData];
     
-    while ([friends count] != 4) {
+    /*while ([friends count] != 4) {
         [condition wait];
         NSLog(@"hello testing! %d", [friends count]);
-    }
+    }*/
     
+    [condition wait];
     [condition unlock];
     
     NSString *s1 = [[friends objectAtIndex:2] email];
