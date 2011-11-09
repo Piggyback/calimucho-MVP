@@ -412,11 +412,14 @@
 				F96C49CB1466168E00B943BB /* CreateAcctViewController.m in Sources */,
 				F98980A51467EF590008EC4A /* VendorViewController.m in Sources */,
 				F98980A91467FB140008EC4A /* Vendor.m in Sources */,
+<<<<<<< HEAD
 				F965532F1469235C00E138ED /* AddFriendsViewController.m in Sources */,
 				F9FA8868146A06A400B2B24B /* ShowFriendsViewController.m in Sources */,
 				F96D4B23146A0D9200194D6A /* Friend.m in Sources */,
+=======
 				F965532F1469235C00E138ED /* FriendsViewController.m in Sources */,
 				3E89560F146A1F8C00A4AB70 /* QRReaderViewController.mm in Sources */,
+>>>>>>> eb387a42b0618653d90687ad3d7eab464ca90c19
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
