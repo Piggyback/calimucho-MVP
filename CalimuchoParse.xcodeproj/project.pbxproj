@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E8955F9146A1CC200A4AB70 /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8955F4146A1BB000A4AB70 /* libZXingWidget.a */; };
+		3E8955FD146A1D3700A4AB70 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8955FC146A1D3700A4AB70 /* AVFoundation.framework */; };
+		3E8955FF146A1D4300A4AB70 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8955FE146A1D4300A4AB70 /* CoreVideo.framework */; };
+		3E895601146A1D4C00A4AB70 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E895600146A1D4C00A4AB70 /* CoreMedia.framework */; };
+		3E895603146A1D5500A4AB70 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E895602146A1D5500A4AB70 /* libiconv.dylib */; };
+		3E895605146A1D5D00A4AB70 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E895604146A1D5D00A4AB70 /* AddressBook.framework */; };
+		3E895607146A1D6300A4AB70 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E895606146A1D6300A4AB70 /* AddressBookUI.framework */; };
+		3E89560F146A1F8C00A4AB70 /* QRReaderViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E89560E146A1F8C00A4AB70 /* QRReaderViewController.mm */; };
 		F952DD351464B76A00A14A38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD341464B76A00A14A38 /* UIKit.framework */; };
 		F952DD371464B76A00A14A38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD361464B76A00A14A38 /* Foundation.framework */; };
 		F952DD391464B76A00A14A38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD381464B76A00A14A38 /* CoreGraphics.framework */; };
@@ -35,6 +43,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3E8955F3146A1BB000A4AB70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E8955EB146A1BB000A4AB70 /* ZXingWidget.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ZXingWidget;
+		};
+		3E8955F5146A1BB000A4AB70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E8955EB146A1BB000A4AB70 /* ZXingWidget.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D60398D13DF7CAD006F4B51;
+			remoteInfo = ZXingTests;
+		};
+		3E8955FA146A1CD300A4AB70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E8955EB146A1BB000A4AB70 /* ZXingWidget.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ZXingWidget;
+		};
 		F952DD561464B76A00A14A38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F952DD271464B76A00A14A38 /* Project object */;
@@ -45,6 +74,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E8955EB146A1BB000A4AB70 /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = "../zxing-read-only/iphone/ZXingWidget/ZXingWidget.xcodeproj"; sourceTree = "<group>"; };
+		3E8955FC146A1D3700A4AB70 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3E8955FE146A1D4300A4AB70 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3E895600146A1D4C00A4AB70 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3E895602146A1D5500A4AB70 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		3E895604146A1D5D00A4AB70 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		3E895606146A1D6300A4AB70 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		3E89560D146A1F8C00A4AB70 /* QRReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRReaderViewController.h; sourceTree = "<group>"; };
+		3E89560E146A1F8C00A4AB70 /* QRReaderViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QRReaderViewController.mm; sourceTree = "<group>"; };
 		F952DD301464B76A00A14A38 /* CalimuchoParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalimuchoParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F952DD341464B76A00A14A38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F952DD361464B76A00A14A38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +127,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E895607146A1D6300A4AB70 /* AddressBookUI.framework in Frameworks */,
+				3E895605146A1D5D00A4AB70 /* AddressBook.framework in Frameworks */,
+				3E895603146A1D5500A4AB70 /* libiconv.dylib in Frameworks */,
+				3E895601146A1D4C00A4AB70 /* CoreMedia.framework in Frameworks */,
+				3E8955FF146A1D4300A4AB70 /* CoreVideo.framework in Frameworks */,
+				3E8955FD146A1D3700A4AB70 /* AVFoundation.framework in Frameworks */,
+				3E8955F9146A1CC200A4AB70 /* libZXingWidget.a in Frameworks */,
 				F952DD391464B76A00A14A38 /* CoreGraphics.framework in Frameworks */,
 				F96C49C81465FE0C00B943BB /* Security.framework in Frameworks */,
 				F96C49C61465FE0500B943BB /* libz.1.1.3.dylib in Frameworks */,
@@ -114,6 +159,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E8955EC146A1BB000A4AB70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E8955F4146A1BB000A4AB70 /* libZXingWidget.a */,
+				3E8955F6146A1BB000A4AB70 /* ZXingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E8955F8146A1BC300A4AB70 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				3E8955EB146A1BB000A4AB70 /* ZXingWidget.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
 		F952DD251464B76A00A14A38 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +183,7 @@
 				F952DD581464B76A00A14A38 /* CalimuchoParseTests */,
 				F952DD331464B76A00A14A38 /* Frameworks */,
 				F952DD311464B76A00A14A38 /* Products */,
+				3E8955F8146A1BC300A4AB70 /* Dependencies */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +199,12 @@
 		F952DD331464B76A00A14A38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E895606146A1D6300A4AB70 /* AddressBookUI.framework */,
+				3E895604146A1D5D00A4AB70 /* AddressBook.framework */,
+				3E895602146A1D5500A4AB70 /* libiconv.dylib */,
+				3E895600146A1D4C00A4AB70 /* CoreMedia.framework */,
+				3E8955FE146A1D4300A4AB70 /* CoreVideo.framework */,
+				3E8955FC146A1D3700A4AB70 /* AVFoundation.framework */,
 				F96C49C71465FE0C00B943BB /* Security.framework */,
 				F96C49C51465FE0500B943BB /* libz.1.1.3.dylib */,
 				F96C49C31465FDF300B943BB /* MobileCoreServices.framework */,
@@ -170,6 +239,8 @@
 				F96D4B22146A0D9200194D6A /* Friend.m */,
 				F98980A71467FB140008EC4A /* Vendor.h */,
 				F98980A81467FB140008EC4A /* Vendor.m */,
+				3E89560D146A1F8C00A4AB70 /* QRReaderViewController.h */,
+				3E89560E146A1F8C00A4AB70 /* QRReaderViewController.mm */,
 				F952DD3B1464B76A00A14A38 /* Supporting Files */,
 			);
 			path = CalimuchoParse;
@@ -219,6 +290,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3E8955FB146A1CD300A4AB70 /* PBXTargetDependency */,
 			);
 			name = CalimuchoParse;
 			productName = CalimuchoParse;
@@ -262,6 +334,12 @@
 			mainGroup = F952DD251464B76A00A14A38;
 			productRefGroup = F952DD311464B76A00A14A38 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3E8955EC146A1BB000A4AB70 /* Products */;
+					ProjectRef = 3E8955EB146A1BB000A4AB70 /* ZXingWidget.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F952DD2F1464B76A00A14A38 /* CalimuchoParse */,
@@ -269,6 +347,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3E8955F4146A1BB000A4AB70 /* libZXingWidget.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libZXingWidget.a;
+			remoteRef = 3E8955F3146A1BB000A4AB70 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3E8955F6146A1BB000A4AB70 /* ZXingTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZXingTests.octest;
+			remoteRef = 3E8955F5146A1BB000A4AB70 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F952DD2E1464B76A00A14A38 /* Resources */ = {
@@ -317,9 +412,14 @@
 				F96C49CB1466168E00B943BB /* CreateAcctViewController.m in Sources */,
 				F98980A51467EF590008EC4A /* VendorViewController.m in Sources */,
 				F98980A91467FB140008EC4A /* Vendor.m in Sources */,
+<<<<<<< HEAD
 				F965532F1469235C00E138ED /* AddFriendsViewController.m in Sources */,
 				F9FA8868146A06A400B2B24B /* ShowFriendsViewController.m in Sources */,
 				F96D4B23146A0D9200194D6A /* Friend.m in Sources */,
+=======
+				F965532F1469235C00E138ED /* FriendsViewController.m in Sources */,
+				3E89560F146A1F8C00A4AB70 /* QRReaderViewController.mm in Sources */,
+>>>>>>> eb387a42b0618653d90687ad3d7eab464ca90c19
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +434,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3E8955FB146A1CD300A4AB70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZXingWidget;
+			targetProxy = 3E8955FA146A1CD300A4AB70 /* PBXContainerItemProxy */;
+		};
 		F952DD571464B76A00A14A38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F952DD2F1464B76A00A14A38 /* CalimuchoParse */;
@@ -423,6 +528,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalimuchoParse/CalimuchoParse-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../zxing-read-only/cpp/core/src",
+					"../zxing-read-only/iphone/ZXingWidget/Classes/**",
+				);
 				INFOPLIST_FILE = "CalimuchoParse/CalimuchoParse-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -438,6 +547,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalimuchoParse/CalimuchoParse-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../zxing-read-only/cpp/core/src",
+					"../zxing-read-only/iphone/ZXingWidget/Classes/**",
+				);
 				INFOPLIST_FILE = "CalimuchoParse/CalimuchoParse-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

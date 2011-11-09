@@ -216,14 +216,41 @@
         <scene sceneID="QIj-W5-cLO">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMf-xw-Fy7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="eam-nX-IXk" sceneMemberID="viewController">
+                <viewController id="eam-nX-IXk" customClass="QRReaderViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lXI-r3-7dm">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qtd-Ez-miT">
+                                <rect key="frame" x="81" y="55" width="159" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Punchd in the nuts">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanPressed:" destination="eam-nX-IXk" eventType="touchUpInside" id="Alf-l4-IQX"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="QR results show up here" textAlignment="center" id="osu-he-BXO">
+                                <rect key="frame" x="20" y="109" width="280" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Get Points" id="CEL-Nk-u8A"/>
                     <navigationItem key="navigationItem" title="Scan QR" id="Wxn-lu-Txf"/>
+                    <connections>
+                        <outlet property="resultsView" destination="osu-he-BXO" id="10R-01-W97"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="61" y="-301"/>
@@ -361,6 +388,7 @@
                     </connections>
                 </viewController>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="826" y="-885"/>
         </scene>
         <scene sceneID="D5z-3b-k21">
@@ -414,6 +442,9 @@
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="445" y="-885"/>
+=======
+            <point key="canvasLocation" x="452" y="-885"/>
+>>>>>>> eb387a42b0618653d90687ad3d7eab464ca90c19
         </scene>
         <scene sceneID="R2R-DH-n19">
             <objects>
