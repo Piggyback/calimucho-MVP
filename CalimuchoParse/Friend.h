@@ -10,6 +10,8 @@
 
 @interface Friend : NSObject
 
-@property (atomic, assign) NSString *email;
+@property (atomic, retain) NSString *email;
+
+- (id)initWithEmail:(NSString*)newEmail;
 
 @end

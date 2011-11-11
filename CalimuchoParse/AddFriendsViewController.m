@@ -9,20 +9,57 @@
 #import "AddFriendsViewController.h"
 #import "Parse/Parse.h"
 #import "CMAppDelegate.h"
+#import "ShowFriendsViewController.h"
+#import "Friend.h"
 
 @implementation AddFriendsViewController
 
-- (IBAction)addFriend:(id)sender {    
-    PFObject *newFriend = [[PFObject alloc] initWithClassName:@"Friends"];
-    [newFriend setObject:myEmail forKey:@"uid1"];
-    [newFriend setObject:friendEmail.text forKey:@"uid2"];
-    [newFriend saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {
-            label.text = @"Friend added!";
-        } else {
-            label.text = @"Error";
+@synthesize myEmail;
+@synthesize existingFriends;
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        NSLog(@"initwithcoder for addfriendsviewcontroller");
+        myEmail = [[NSString alloc] init];
+        existingFriends = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
+- (IBAction)addFriend:(id)sender {
+    BOOL friendshipExists = [self doesFriendshipExistAlready:friendEmail.text];
+    if (!friendshipExists) {
+        PFObject *newFriend = [[PFObject alloc] initWithClassName:@"Friends"];
+        [newFriend setObject:myEmail forKey:@"uid1"];
+        [newFriend setObject:friendEmail.text forKey:@"uid2"];
+        [newFriend saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (!error) {
+                Friend *f = [[Friend alloc] initWithEmail:friendEmail.text];
+                [existingFriends addObject:f];
+                label.text = @"Friend added!";
+            } else {
+                label.text = @"Error";
+            }
+        }];
+    } else {
+        label.text = @"You are already friends!";
+    }
+}
+
+- (BOOL)doesFriendshipExistAlready:(NSString*)friendsEmail {
+    int myIndex = [self.navigationController.viewControllers indexOfObject:self.navigationController.topViewController];
+    ShowFriendsViewController *fvc = (ShowFriendsViewController *)[self.navigationController.viewControllers objectAtIndex:(myIndex - 1)];
+    existingFriends = fvc.friends;
+    
+    NSString *s = [[NSMutableString alloc] init];
+    for (int i = 0; i < [existingFriends count]; i++) {
+        s = [[existingFriends objectAtIndex:i] email];
+        if ([s isEqualToString:friendsEmail]) {
+            return YES;
         }
-    }];
+    }
+    return NO;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

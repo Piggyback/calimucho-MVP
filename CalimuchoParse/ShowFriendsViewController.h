@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ShowFriendsViewController : UITableViewController {
-    NSCondition *condition;
+    NSLock *condition;
 }
 
-@property (nonatomic, strong) NSMutableArray *friends;
+@property (nonatomic) int n;
+@property (nonatomic, copy) NSMutableArray *friends;
 @property (nonatomic, strong) NSString *myEmail;
 
 @end

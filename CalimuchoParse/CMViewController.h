@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CMViewController : UIViewController {
-
     IBOutlet UITextField *email;
     IBOutlet UITextField *password;
-    IBOutlet UILabel *label;
 }
 
 - (IBAction)signIn:(id)sender;

@@ -42,9 +42,14 @@
             
             else {
                 // account creation failed. show alert
-                NSString *errorString = [[error userInfo] objectForKey:@"error"];
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Account Creation Failed" message:errorString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [alert show];
+                if ([error code] == kPFErrorConnectionFailed) {
+                    NSLog(@"Could not connect to Parse servers");
+                }
+                else {
+                    NSString *errorString = [[error userInfo] objectForKey:@"error"];
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Account Creation Failed" message:errorString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                    [alert show];
+                }
             }
         }];
     }

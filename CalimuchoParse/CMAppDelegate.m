@@ -17,6 +17,16 @@
 @synthesize myEmail;
 @synthesize window = _window;
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        NSLog(@"init for appdelegate");
+        vendors = [[NSMutableArray alloc] init];
+        myEmail = [[NSString alloc] init];
+    }
+    return self;
+}
+
 - (void)getVendorData {
     // fetch vendors from parse and add to Vendor class array
     PFQuery *query = [PFQuery queryWithClassName:@"Vendors"];

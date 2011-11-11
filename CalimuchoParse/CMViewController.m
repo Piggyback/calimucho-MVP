@@ -25,9 +25,20 @@
                     UITabBarController *homeViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
                     [self presentModalViewController:homeViewController animated:YES];
                 } else {
-                    // failed login. stay on same screen
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Email and password did not match" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                    [alert show];
+                    if ([error code] == kPFErrorConnectionFailed) {
+                        NSLog(@"Could not connect to Parse servers");
+                    }
+                    else {
+                        NSString* s1;
+                        if ([error code] == 0) {
+                            s1 = @"Email and password did not match";
+                        }
+                        else {
+                            s1 = [NSString stringWithFormat:@"%d", [error code]];
+                        }
+                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:s1 delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                        [alert show];
+                    }
                 }
             }];
 }

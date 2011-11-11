@@ -16,4 +16,15 @@
 @synthesize hours;
 @synthesize phone;
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        name = [[NSString alloc] init];
+        address = [[NSString alloc] init];
+        hours = [[NSString alloc] init];
+        NSLog(@"init for vendor class");
+    }
+    return self; 
+}
+
 @end

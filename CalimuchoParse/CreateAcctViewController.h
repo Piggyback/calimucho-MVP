@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CreateAcctViewController : UIViewController {
-
     IBOutlet UITextField *email;
     IBOutlet UITextField *password;
-    IBOutlet UILabel *label;
 }
 
 - (IBAction)createAcct:(id)sender;

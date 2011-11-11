@@ -10,10 +10,20 @@
 #import "Vendor.h"
 #import "Parse/Parse.h"
 #import "CMAppDelegate.h"
+#import "Friend.h"
 
 @implementation VendorViewController
 
 @synthesize vendors;
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        NSLog(@"in initwithcoder for vendor view controller");
+        vendors = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {

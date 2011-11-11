@@ -11,9 +11,12 @@
 @interface AddFriendsViewController : UIViewController {
     IBOutlet UILabel *label;
     IBOutlet UITextField *friendEmail;
-    NSString *myEmail;
 }
 
+@property (strong, nonatomic) NSString *myEmail;
+@property (strong, nonatomic) NSMutableArray *existingFriends;
+
 - (IBAction)addFriend:(id)sender;
+- (BOOL)doesFriendshipExistAlready:(NSString*)friendEmail;
 
 @end

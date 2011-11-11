@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Parse/Parse.h"
 
-@interface CMAppDelegate : UIResponder <UIApplicationDelegate>
+@interface CMAppDelegate : UIResponder <UIApplicationDelegate> 
 
 @property (strong, nonatomic) NSMutableArray *vendors;
 @property (strong, nonatomic) NSString *myEmail;

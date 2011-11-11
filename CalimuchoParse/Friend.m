@@ -12,4 +12,17 @@
 
 @synthesize email;
 
+- (id)init {
+    return [self initWithEmail:nil];
+}
+
+- (id)initWithEmail:(NSString*)newEmail {
+    self = [super init];
+    if (self) {
+        NSLog(@"init for friend class");
+        email = newEmail;
+    }
+    return self;
+}
+
 @end

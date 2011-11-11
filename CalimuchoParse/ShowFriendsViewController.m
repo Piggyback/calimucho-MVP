@@ -9,45 +9,71 @@
 #import "ShowFriendsViewController.h"
 #import "Parse/Parse.h"
 #import "Friend.h"
+#import "VendorViewController.h"
 #import "CMAppDelegate.h"
 
 @implementation ShowFriendsViewController
 
 @synthesize friends;
 @synthesize myEmail;
+@synthesize n;
+
+- (id) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        if (myEmail == nil) {
+            NSLog(@"init with coder for showfriendsviewcontroller");
+            condition = [[NSLock alloc] init];
+            CMAppDelegate *appDelegate = (CMAppDelegate *)[[UIApplication sharedApplication] delegate];
+            myEmail = appDelegate.myEmail;
+            friends = [[NSMutableArray alloc] init];
+        }
+    }
+    return self;
+}
 
 - (void)getFriendData {
-    
     // fetch friends from parse and add to Friend class array
     PFQuery *query = [PFQuery queryWithClassName:@"Friends"];
     [query whereKey:@"uid1" equalTo:myEmail];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            //[condition lock];
-            friends = [NSMutableArray arrayWithCapacity:objects.count];
-            for (int i = 0; i < objects.count; i++) {
-                Friend *friend = [[Friend alloc] init];
-                PFObject *friendRow = [objects objectAtIndex:i];
-                friend.email = [friendRow objectForKey:@"uid2"];
-                [friends addObject:friend];
-            }
-            [condition signal];
-            //[condition unlock];
+    NSError *e;
+    NSArray* objects = [query findObjects:&e];
+    if (!e) {
+        for (int i = 0; i < objects.count; i++) {
+            Friend *friend = [[Friend alloc] init];
+            PFObject *friendRow = [objects objectAtIndex:i];
+            friend.email = [friendRow objectForKey:@"uid2"];
+            [friends addObject:friend];
         }
-        else {
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
+    }
+    else {
+        NSLog(@"Error occurred in fetching friend data");
+    }
+    
+    PFQuery *query2 = [PFQuery queryWithClassName:@"Friends"];
+    [query2 whereKey:@"uid2" equalTo:myEmail];
+    NSError *e2;
+    objects = [query2 findObjects:&e2];
+    if (!e2) {
+        for (int i = 0; i < objects.count; i++) {
+            Friend *friend = [[Friend alloc] init];
+            PFObject *friendRow = [objects objectAtIndex:i];
+            friend.email = [friendRow objectForKey:@"uid1"];
+            [friends addObject:friend];
         }
-    }];
-    NSString *s1 = [[friends objectAtIndex:0] email];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:s1 message:@"in getFriendData" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
+    }
+    else {
+        NSLog(@"Error occurred in fetching friend data");
+    }
+
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        // custom initialization
+        NSLog(@"initwithstyle");
     }
     return self;
 }
@@ -66,29 +92,7 @@
 {
     [super viewDidLoad];
     
-    CMAppDelegate *appDelegate = (CMAppDelegate *)[[UIApplication sharedApplication] delegate];
-    myEmail = appDelegate.myEmail;
-    
-    [condition lock];
     [self getFriendData];
-    
-    /*while ([friends count] != 4) {
-        [condition wait];
-        NSLog(@"hello testing! %d", [friends count]);
-    }*/
-    
-    [condition wait];
-    [condition unlock];
-    
-    NSString *s1 = [[friends objectAtIndex:2] email];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:s1 message:@"in view did load" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
@@ -140,9 +144,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"displaying friends table");
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendCell"];
-	Friend *friend = [self.friends objectAtIndex:indexPath.row];
+    Friend *friend = [self.friends objectAtIndex:indexPath.row];
 	cell.textLabel.text = friend.email;
+    cell.detailTextLabel.text = friend.email;
     return cell;
 }
 

@@ -14,6 +14,8 @@
 		3E895605146A1D5D00A4AB70 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E895604146A1D5D00A4AB70 /* AddressBook.framework */; };
 		3E895607146A1D6300A4AB70 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E895606146A1D6300A4AB70 /* AddressBookUI.framework */; };
 		3E89560F146A1F8C00A4AB70 /* QRReaderViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E89560E146A1F8C00A4AB70 /* QRReaderViewController.mm */; };
+		F919DE11146B95150029D85E /* ReferralsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F919DE10146B95150029D85E /* ReferralsViewController.m */; };
+		F919DE14146B95990029D85E /* Referral.m in Sources */ = {isa = PBXBuildFile; fileRef = F919DE13146B95990029D85E /* Referral.m */; };
 		F952DD351464B76A00A14A38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD341464B76A00A14A38 /* UIKit.framework */; };
 		F952DD371464B76A00A14A38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD361464B76A00A14A38 /* Foundation.framework */; };
 		F952DD391464B76A00A14A38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD381464B76A00A14A38 /* CoreGraphics.framework */; };
@@ -27,7 +29,6 @@
 		F952DD5D1464B76A00A14A38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F952DD5B1464B76A00A14A38 /* InfoPlist.strings */; };
 		F952DD601464B76A00A14A38 /* CalimuchoParseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F952DD5F1464B76A00A14A38 /* CalimuchoParseTests.m */; };
 		F965532F1469235C00E138ED /* AddFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F965532E1469235C00E138ED /* AddFriendsViewController.m */; };
-		F96C49BC1465FB2C00B943BB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49BB1465FB2C00B943BB /* Parse.framework */; };
 		F96C49BE1465FDD300B943BB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49BD1465FDD300B943BB /* AudioToolbox.framework */; };
 		F96C49C01465FDDC00B943BB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49BF1465FDDC00B943BB /* CFNetwork.framework */; };
 		F96C49C21465FDE800B943BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C49C11465FDE800B943BB /* SystemConfiguration.framework */; };
@@ -38,6 +39,7 @@
 		F96D4B23146A0D9200194D6A /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = F96D4B22146A0D9200194D6A /* Friend.m */; };
 		F98980A51467EF590008EC4A /* VendorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98980A41467EF590008EC4A /* VendorViewController.m */; };
 		F98980A91467FB140008EC4A /* Vendor.m in Sources */ = {isa = PBXBuildFile; fileRef = F98980A81467FB140008EC4A /* Vendor.m */; };
+		F9DDF2C1146CA1D20048383C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DDF2C0146CA1D20048383C /* Parse.framework */; };
 		F9ECFDD8146A9146001FEC5A /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E398BC2146A7B9C00B25530 /* libZXingWidget.a */; };
 		F9FA8868146A06A400B2B24B /* ShowFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FA8867146A06A400B2B24B /* ShowFriendsViewController.m */; };
 /* End PBXBuildFile section */
@@ -83,6 +85,10 @@
 		3E895606146A1D6300A4AB70 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		3E89560D146A1F8C00A4AB70 /* QRReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRReaderViewController.h; sourceTree = "<group>"; };
 		3E89560E146A1F8C00A4AB70 /* QRReaderViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QRReaderViewController.mm; sourceTree = "<group>"; };
+		F919DE0F146B95150029D85E /* ReferralsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferralsViewController.h; sourceTree = "<group>"; };
+		F919DE10146B95150029D85E /* ReferralsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferralsViewController.m; sourceTree = "<group>"; };
+		F919DE12146B95990029D85E /* Referral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Referral.h; sourceTree = "<group>"; };
+		F919DE13146B95990029D85E /* Referral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Referral.m; sourceTree = "<group>"; };
 		F952DD301464B76A00A14A38 /* CalimuchoParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalimuchoParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F952DD341464B76A00A14A38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F952DD361464B76A00A14A38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,7 +109,6 @@
 		F952DD5F1464B76A00A14A38 /* CalimuchoParseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalimuchoParseTests.m; sourceTree = "<group>"; };
 		F965532D1469235C00E138ED /* AddFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsViewController.h; sourceTree = "<group>"; };
 		F965532E1469235C00E138ED /* AddFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsViewController.m; sourceTree = "<group>"; };
-		F96C49BB1465FB2C00B943BB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F96C49BD1465FDD300B943BB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F96C49BF1465FDDC00B943BB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F96C49C11465FDE800B943BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -118,6 +123,7 @@
 		F98980A41467EF590008EC4A /* VendorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendorViewController.m; sourceTree = "<group>"; };
 		F98980A71467FB140008EC4A /* Vendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vendor.h; sourceTree = "<group>"; };
 		F98980A81467FB140008EC4A /* Vendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vendor.m; sourceTree = "<group>"; };
+		F9DDF2C0146CA1D20048383C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F9FA8866146A06A400B2B24B /* ShowFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowFriendsViewController.h; sourceTree = "<group>"; };
 		F9FA8867146A06A400B2B24B /* ShowFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowFriendsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,7 +149,7 @@
 				F96C49BE1465FDD300B943BB /* AudioToolbox.framework in Frameworks */,
 				F952DD351464B76A00A14A38 /* UIKit.framework in Frameworks */,
 				F952DD371464B76A00A14A38 /* Foundation.framework in Frameworks */,
-				F96C49BC1465FB2C00B943BB /* Parse.framework in Frameworks */,
+				F9DDF2C1146CA1D20048383C /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +205,7 @@
 		F952DD331464B76A00A14A38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9DDF2C0146CA1D20048383C /* Parse.framework */,
 				3E895606146A1D6300A4AB70 /* AddressBookUI.framework */,
 				3E895604146A1D5D00A4AB70 /* AddressBook.framework */,
 				3E895602146A1D5500A4AB70 /* libiconv.dylib */,
@@ -211,7 +218,6 @@
 				F96C49C11465FDE800B943BB /* SystemConfiguration.framework */,
 				F96C49BF1465FDDC00B943BB /* CFNetwork.framework */,
 				F96C49BD1465FDD300B943BB /* AudioToolbox.framework */,
-				F96C49BB1465FB2C00B943BB /* Parse.framework */,
 				F952DD341464B76A00A14A38 /* UIKit.framework */,
 				F952DD361464B76A00A14A38 /* Foundation.framework */,
 				F952DD381464B76A00A14A38 /* CoreGraphics.framework */,
@@ -235,10 +241,14 @@
 				F9FA8867146A06A400B2B24B /* ShowFriendsViewController.m */,
 				F965532D1469235C00E138ED /* AddFriendsViewController.h */,
 				F965532E1469235C00E138ED /* AddFriendsViewController.m */,
+				F919DE0F146B95150029D85E /* ReferralsViewController.h */,
+				F919DE10146B95150029D85E /* ReferralsViewController.m */,
 				F96D4B21146A0D9200194D6A /* Friend.h */,
 				F96D4B22146A0D9200194D6A /* Friend.m */,
 				F98980A71467FB140008EC4A /* Vendor.h */,
 				F98980A81467FB140008EC4A /* Vendor.m */,
+				F919DE12146B95990029D85E /* Referral.h */,
+				F919DE13146B95990029D85E /* Referral.m */,
 				3E89560D146A1F8C00A4AB70 /* QRReaderViewController.h */,
 				3E89560E146A1F8C00A4AB70 /* QRReaderViewController.mm */,
 				F952DD3B1464B76A00A14A38 /* Supporting Files */,
@@ -416,6 +426,8 @@
 				F9FA8868146A06A400B2B24B /* ShowFriendsViewController.m in Sources */,
 				F96D4B23146A0D9200194D6A /* Friend.m in Sources */,
 				3E89560F146A1F8C00A4AB70 /* QRReaderViewController.mm in Sources */,
+				F919DE11146B95150029D85E /* ReferralsViewController.m in Sources */,
+				F919DE14146B95990029D85E /* Referral.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
