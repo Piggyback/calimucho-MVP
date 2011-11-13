@@ -9,6 +9,7 @@
 #import "QRReaderViewController.h"
 #import "QRCodeReader.h"
 #import "Parse/Parse.h"
+#import "TestViewController.h"
 
 @interface QRReaderViewController()
 @end
@@ -81,34 +82,29 @@
     self.resultsToDisplay = result;
     
     // validate qr code with vendor table through parse
-    PFQuery *query = [PFQuery queryWithClassName:@"Vendors"];
-    [query whereKey:@"name" equalTo:resultsToDisplay];
-    [query countObjectsInBackgroundWithBlock:^(int count, NSError *error) {
-        if (!error) {
-            // The count request succeeded. Log the count
-            NSLog(@"Count request succeeded");
-            
-            if (self.isViewLoaded) {
-                NSString *vendorValid = @"Vendor is in database!";
-                NSString *vendorNotValid = @"Vendor is NOT in database!";
-                NSString *vendorValidation;
-                
-                if (count == 1) {
-                    vendorValidation = vendorValid;
-                } else {
-                    vendorValidation = vendorNotValid;
-                }
-                
-                NSString *setText = [NSString stringWithFormat:@"QR message: %@\n%@", resultsToDisplay, vendorValidation];
-                [resultsView setText:setText];
-                [resultsView setNeedsDisplay];
-            }
-            [self dismissModalViewControllerAnimated:NO];
-        } else {
-            // The request failed
-            NSLog(@"Count request FAILED!");
-        }
-    }];
+//    PFQuery *query = [PFQuery queryWithClassName:@"Vendors"];
+//    [query whereKey:@"name" equalTo:resultsToDisplay];
+//    [query countObjectsInBackgroundWithBlock:^(int count, NSError *error) {
+//        if (!error) {
+//            // The count request succeeded. Log the count
+//            NSLog(@"Count request succeeded");
+//            
+//            if (self.isViewLoaded) {
+//                if (count == 1) {
+//                    TestViewController *tc = [self.storyboard instantiateViewControllerWithIdentifier:@"test"];
+//                    [tc setVendorName:result];
+//                }
+//            }
+//            [self dismissModalViewControllerAnimated:NO];
+//        } else {
+//            // The request failed
+//            NSLog(@"Count request FAILED!");
+//        }
+//    }];
+    NSString *s = @"hello";
+    TestViewController *tc = [self.storyboard instantiateViewControllerWithIdentifier:@"test"];
+    [tc setVendorName:s];
+    
 }
 
 - (void)zxingControllerDidCancel:(ZXingWidgetController*)controller {

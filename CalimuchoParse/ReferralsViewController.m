@@ -10,8 +10,11 @@
 #import "Parse/Parse.h"
 #import "Referral.h"
 #import "CMAppDelegate.h"
+#import "ReferralDetailViewController.h"
 
-@implementation ReferralsViewController
+@implementation ReferralsViewController {
+    NSUInteger selectedIndex;
+}
 
 @synthesize referrals;
 @synthesize myEmail;
@@ -26,9 +29,35 @@
     return self;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"refDetailSegue"]) {
+        ReferralDetailViewController *rvc = [segue destinationViewController];
+        rvc.referral = [referrals objectAtIndex:selectedIndex];
+    }
+}
+
+- (void) addReferral {
+    PFObject *newR = [[PFObject alloc] initWithClassName:@"Referrals"];
+    [newR setObject:myEmail forKey:@"referred"];
+    [newR setObject:[NSNumber numberWithInt:2] forKey:@"vid"];
+    [newR setObject:@"Standard Cafe" forKey:@"vendorName"];
+    NSMutableArray* rArray = [NSMutableArray arrayWithObjects:@"chloesiu@gmail.com",@"jeffkuo@gmail.com",nil];
+    NSNumber *num = [NSNumber numberWithInt:[rArray count]];
+    [newR setObject:rArray forKey:@"referredBy"];
+    [newR setObject:num forKey:@"numReferrals"];
+    [newR saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {
+            NSLog(@"referral added");
+        } else {
+            NSLog(@"referral could notb e added");
+        }
+    }];
+}
+
 - (void) getReferralData {
     PFQuery *query = [PFQuery queryWithClassName:@"Referrals"];
     [query whereKey:@"referred" equalTo:myEmail];
+    [query orderByDescending:@"numReferrals"];
     NSError *e;
     NSArray* objects = [query findObjects:&e];
     if (!e) {
@@ -36,8 +65,10 @@
         for (int i = 0; i < objects.count; i++) {
             Referral *r = [[Referral alloc] init];
             PFObject *referralRow = [objects objectAtIndex:i];
-            r.referrer = [referralRow objectForKey:@"referrer"];
+            r.referredBy = [referralRow objectForKey:@"referredBy"];
             r.vid = [[referralRow objectForKey:@"vid"] intValue];
+            r.vendorName = [referralRow objectForKey:@"vendorName"];
+            r.numReferrals = [[referralRow objectForKey:@"numReferrals"] intValue];
             [referrals addObject:r];
         }
     }
@@ -72,7 +103,9 @@
     CMAppDelegate *appDelegate = (CMAppDelegate *)[[UIApplication sharedApplication] delegate];
     myEmail = appDelegate.myEmail;
     
+    //[self addReferral];
     [self getReferralData];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -131,9 +164,8 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ReferralCell"];
 	Referral *r = [self.referrals objectAtIndex:indexPath.row];
-    NSString *vid = [NSString stringWithFormat:@"%d", r.vid];
-	cell.textLabel.text = vid;
-	cell.detailTextLabel.text = r.referrer;
+	cell.textLabel.text = r.vendorName;
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"Referred by %d friends",r.numReferrals];
     return cell;
 }
 
@@ -180,13 +212,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    selectedIndex = indexPath.row;
+    NSLog(@"selected index is %d",selectedIndex);
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    ReferralDetailViewController *detvc = [[ReferralDetailViewController alloc] initWithReferral:[referrals objectAtIndex:indexPath.row]];
+//    [self.navigationController pushViewController:detvc animated:YES];
+//    ReferralDetailViewController *detvc = [self.storyboard instantiateViewControllerWithIdentifier:@"refDetails"];
+//    detvc.referral = [referrals objectAtIndex:indexPath.row];
+//    [self.navigationController pushViewController:detvc animated:YES];
 }
 
 @end

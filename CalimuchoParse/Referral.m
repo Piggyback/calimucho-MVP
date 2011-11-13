@@ -10,16 +10,18 @@
 
 @implementation Referral
 
-@synthesize referrer;
 @synthesize referred;
 @synthesize vid;
-@synthesize completed;
+@synthesize vendorName;
+@synthesize referredBy;
+@synthesize numReferrals;
 
 - (id)init {
     self = [super init];
     if (self) {
-        referrer = [[NSString alloc] init];
         referred = [[NSString alloc] init];
+        vendorName = [[NSString alloc] init];
+        referredBy = [[NSMutableArray alloc] init];
         NSLog(@"init for referral class");
     }
     return self; 
