@@ -12,6 +12,7 @@
 @implementation ReferralDetailViewController
 
 @synthesize referral;
+@synthesize referrers;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,6 +38,9 @@
     [super viewDidLoad];
 
     self.title = referral.vendorName;
+    referrers = referral.referredBy;
+    
+    NSLog(@"%d",[referrers count]);
     NSLog(@"%@",referral.vendorName);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -83,26 +87,19 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return [referrers count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
-    // Configure the cell...
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ReferDetailsCell"];
+	cell.textLabel.text = [referrers objectAtIndex:indexPath.row];
     return cell;
 }
 

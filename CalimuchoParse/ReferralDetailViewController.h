@@ -12,5 +12,6 @@
 @interface ReferralDetailViewController : UITableViewController
 
 @property (nonatomic, strong) Referral *referral;
+@property (nonatomic, strong) NSMutableArray *referrers;
 
 @end
