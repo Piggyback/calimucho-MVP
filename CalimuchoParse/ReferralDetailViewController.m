@@ -37,7 +37,7 @@
 {
     [super viewDidLoad];
 
-    self.title = referral.vendorName;
+    self.title = [NSString stringWithFormat:@"%@ Referrals", referral.vendorName];
     referrers = referral.referredBy;
     
     NSLog(@"%d",[referrers count]);

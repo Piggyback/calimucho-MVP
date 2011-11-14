@@ -32,7 +32,6 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"refDetailSegue"]) {
         ReferralDetailViewController *rvc = [segue destinationViewController];
-        //rvc.referral = [referrals objectAtIndex:selectedIndex];
         rvc.referral = [referrals objectAtIndex:[[self.tableView indexPathForSelectedRow] row]];
     }
 }
@@ -213,14 +212,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //selectedIndex = indexPath.row;
-    //NSLog(@"selected index is %d",selectedIndex);
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    ReferralDetailViewController *detvc = [[ReferralDetailViewController alloc] initWithReferral:[referrals objectAtIndex:indexPath.row]];
-//    [self.navigationController pushViewController:detvc animated:YES];
-//    ReferralDetailViewController *detvc = [self.storyboard instantiateViewControllerWithIdentifier:@"refDetails"];
-//    detvc.referral = [referrals objectAtIndex:indexPath.row];
-//    [self.navigationController pushViewController:detvc animated:YES];
 }
 
 @end

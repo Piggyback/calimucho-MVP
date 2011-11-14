@@ -41,7 +41,6 @@
 		F98980A51467EF590008EC4A /* VendorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98980A41467EF590008EC4A /* VendorViewController.m */; };
 		F98980A91467FB140008EC4A /* Vendor.m in Sources */ = {isa = PBXBuildFile; fileRef = F98980A81467FB140008EC4A /* Vendor.m */; };
 		F9DDF2C1146CA1D20048383C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DDF2C0146CA1D20048383C /* Parse.framework */; };
-		F9DDF2C4146DDC5C0048383C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DDF2C3146DDC5C0048383C /* TestViewController.m */; };
 		F9ECFDD8146A9146001FEC5A /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E398BC2146A7B9C00B25530 /* libZXingWidget.a */; };
 		F9FA8868146A06A400B2B24B /* ShowFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FA8867146A06A400B2B24B /* ShowFriendsViewController.m */; };
 /* End PBXBuildFile section */
@@ -128,8 +127,6 @@
 		F98980A71467FB140008EC4A /* Vendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vendor.h; sourceTree = "<group>"; };
 		F98980A81467FB140008EC4A /* Vendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vendor.m; sourceTree = "<group>"; };
 		F9DDF2C0146CA1D20048383C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		F9DDF2C2146DDC5C0048383C /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		F9DDF2C3146DDC5C0048383C /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		F9FA8866146A06A400B2B24B /* ShowFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowFriendsViewController.h; sourceTree = "<group>"; };
 		F9FA8867146A06A400B2B24B /* ShowFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowFriendsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,8 +248,6 @@
 				F919DE10146B95150029D85E /* ReferralsViewController.m */,
 				F93B0688146F314300C112C7 /* ReferralDetailViewController.h */,
 				F93B0689146F314300C112C7 /* ReferralDetailViewController.m */,
-				F9DDF2C2146DDC5C0048383C /* TestViewController.h */,
-				F9DDF2C3146DDC5C0048383C /* TestViewController.m */,
 				F96D4B21146A0D9200194D6A /* Friend.h */,
 				F96D4B22146A0D9200194D6A /* Friend.m */,
 				F98980A71467FB140008EC4A /* Vendor.h */,
@@ -438,7 +433,6 @@
 				3E89560F146A1F8C00A4AB70 /* QRReaderViewController.mm in Sources */,
 				F919DE11146B95150029D85E /* ReferralsViewController.m in Sources */,
 				F919DE14146B95990029D85E /* Referral.m in Sources */,
-				F9DDF2C4146DDC5C0048383C /* TestViewController.m in Sources */,
 				F93B068A146F314300C112C7 /* ReferralDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
