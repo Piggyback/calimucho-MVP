@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Vendor : NSObject
+@interface Vendor : NSObject {
+    int vid;
+    NSString* name;
+    NSString* address;
+}
 
 @property (atomic, assign) int vid;
 @property (atomic, retain) NSString *name;

@@ -14,6 +14,7 @@
 		3E895605146A1D5D00A4AB70 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E895604146A1D5D00A4AB70 /* AddressBook.framework */; };
 		3E895607146A1D6300A4AB70 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E895606146A1D6300A4AB70 /* AddressBookUI.framework */; };
 		3E89560F146A1F8C00A4AB70 /* QRReaderViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E89560E146A1F8C00A4AB70 /* QRReaderViewController.mm */; };
+		3E9B2A71146DD82000E0EC6E /* VendorSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9B2A70146DD82000E0EC6E /* VendorSingleViewController.m */; };
 		F919DE11146B95150029D85E /* ReferralsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F919DE10146B95150029D85E /* ReferralsViewController.m */; };
 		F919DE14146B95990029D85E /* Referral.m in Sources */ = {isa = PBXBuildFile; fileRef = F919DE13146B95990029D85E /* Referral.m */; };
 		F952DD351464B76A00A14A38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD341464B76A00A14A38 /* UIKit.framework */; };
@@ -85,6 +86,8 @@
 		3E895606146A1D6300A4AB70 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		3E89560D146A1F8C00A4AB70 /* QRReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRReaderViewController.h; sourceTree = "<group>"; };
 		3E89560E146A1F8C00A4AB70 /* QRReaderViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QRReaderViewController.mm; sourceTree = "<group>"; };
+		3E9B2A6F146DD82000E0EC6E /* VendorSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendorSingleViewController.h; sourceTree = "<group>"; };
+		3E9B2A70146DD82000E0EC6E /* VendorSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendorSingleViewController.m; sourceTree = "<group>"; };
 		F919DE0F146B95150029D85E /* ReferralsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferralsViewController.h; sourceTree = "<group>"; };
 		F919DE10146B95150029D85E /* ReferralsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferralsViewController.m; sourceTree = "<group>"; };
 		F919DE12146B95990029D85E /* Referral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Referral.h; sourceTree = "<group>"; };
@@ -251,6 +254,8 @@
 				F919DE13146B95990029D85E /* Referral.m */,
 				3E89560D146A1F8C00A4AB70 /* QRReaderViewController.h */,
 				3E89560E146A1F8C00A4AB70 /* QRReaderViewController.mm */,
+				3E9B2A6F146DD82000E0EC6E /* VendorSingleViewController.h */,
+				3E9B2A70146DD82000E0EC6E /* VendorSingleViewController.m */,
 				F952DD3B1464B76A00A14A38 /* Supporting Files */,
 			);
 			path = CalimuchoParse;
@@ -428,6 +433,7 @@
 				3E89560F146A1F8C00A4AB70 /* QRReaderViewController.mm in Sources */,
 				F919DE11146B95150029D85E /* ReferralsViewController.m in Sources */,
 				F919DE14146B95990029D85E /* Referral.m in Sources */,
+				3E9B2A71146DD82000E0EC6E /* VendorSingleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

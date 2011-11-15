@@ -165,6 +165,22 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+//    
+//    VendorSingleViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"singleVendor"];
+//    Vendor *vendor = [vendors objectAtIndex:indexPath.row];
+//    [vc setVendorNameString:vendor.name];
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"vendorDetail"]) {
+        
+        VendorSingleViewController *vc = [segue destinationViewController];
+        Vendor *vendor = [vendors objectAtIndex:[[self.tableView indexPathForSelectedRow] row]];
+        [vc setVendorNameString:vendor.name];        
+    }
+    
 }
 
 @end

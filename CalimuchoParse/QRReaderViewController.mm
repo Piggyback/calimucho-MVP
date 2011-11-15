@@ -9,6 +9,8 @@
 #import "QRReaderViewController.h"
 #import "QRCodeReader.h"
 #import "Parse/Parse.h"
+#import "VendorSingleViewController.h"
+#import "Vendor.h"
 
 @interface QRReaderViewController()
 @end
@@ -43,13 +45,21 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+/*
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    VendorSingleViewController *vc = [[VendorSingleViewController alloc] init];
+//    // set vc's (unlinked to storyboard) string instance variable to QR code result
+//    //                    [vc setVendorName:result];
+//    vc.kim = 10;
+//    Vendor *v = [[Vendor alloc] init];
+//    v.name = @"mgao";
 }
 */
+
 
 - (void)viewDidUnload
 {
@@ -89,21 +99,28 @@
             NSLog(@"Count request succeeded");
             
             if (self.isViewLoaded) {
-                NSString *vendorValid = @"Vendor is in database!";
-                NSString *vendorNotValid = @"Vendor is NOT in database!";
-                NSString *vendorValidation;
-                
+                // vendor is in the database
                 if (count == 1) {
-                    vendorValidation = vendorValid;
+                    // create new VendorSingleView object
+                    VendorSingleViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"singleVendor"];
+//                    VendorSingleViewController *vc = [[VendorSingleViewController alloc] init];
+                    // set vc's (unlinked to storyboard) string instance variable to QR code result
+                    [vc setVendorNameString:result];
+                    [vc setFromQRreader:TRUE];
+//                    vc.kim = 10;
+//                    Vendor *v = [[Vendor alloc] init];
+//                    v.name = @"mgao";
+                    // dismiss the QR reader view
+                    // bring up the view of the vc object
+                    [self.navigationController pushViewController:vc animated:NO];
+                    [self dismissModalViewControllerAnimated:NO];
+//                    [self presentViewController:vc animated:NO completion:nil];
                 } else {
-                    vendorValidation = vendorNotValid;
+                    // display message in previous view
+                    [resultsView setText:[NSString stringWithFormat:@"%@ is NOT in the database", resultsToDisplay]];
+                    [self dismissModalViewControllerAnimated:NO];
                 }
-                
-                NSString *setText = [NSString stringWithFormat:@"QR message: %@\n%@", resultsToDisplay, vendorValidation];
-                [resultsView setText:setText];
-                [resultsView setNeedsDisplay];
             }
-            [self dismissModalViewControllerAnimated:NO];
         } else {
             // The request failed
             NSLog(@"Count request FAILED!");

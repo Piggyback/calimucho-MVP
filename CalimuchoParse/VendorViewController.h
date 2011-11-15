@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VendorSingleViewController.h"
 
 @interface VendorViewController : UITableViewController
 
