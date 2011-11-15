@@ -1,80 +1,18 @@
 //
-//  ReferralsViewController.m
+//  ReferralDetailViewController.m
 //  CalimuchoParse
 //
-//  Created by Kimberly Hsiao on 11/9/11.
+//  Created by Kimberly Hsiao on 11/12/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "ReferralsViewController.h"
-#import "Parse/Parse.h"
-#import "Referral.h"
 #import "ReferralDetailViewController.h"
 
-@implementation ReferralsViewController {
-    NSUInteger selectedIndex;
-}
 
-@synthesize referrals;
-@synthesize myEmail;
+@implementation ReferralDetailViewController
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        NSLog(@"initwithcoder for referral view controller");
-        referrals = [[NSMutableArray alloc] init];
-        myEmail = [[NSString alloc] init];
-    }
-    return self;
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"refDetailSegue"]) {
-        ReferralDetailViewController *rvc = [segue destinationViewController];
-        rvc.referral = [referrals objectAtIndex:[[self.tableView indexPathForSelectedRow] row]];
-    }
-}
-
-- (void) addReferral {
-    PFObject *newR = [[PFObject alloc] initWithClassName:@"Referrals"];
-    [newR setObject:myEmail forKey:@"referred"];
-    [newR setObject:[NSNumber numberWithInt:2] forKey:@"vid"];
-    [newR setObject:@"Standard Cafe" forKey:@"vendorName"];
-    NSMutableArray* rArray = [NSMutableArray arrayWithObjects:@"chloesiu@gmail.com",@"jeffkuo@gmail.com",nil];
-    NSNumber *num = [NSNumber numberWithInt:[rArray count]];
-    [newR setObject:rArray forKey:@"referredBy"];
-    [newR setObject:num forKey:@"numReferrals"];
-    [newR saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {
-            NSLog(@"referral added");
-        } else {
-            NSLog(@"referral could notb e added");
-        }
-    }];
-}
-
-- (void) getReferralData {
-    PFQuery *query = [PFQuery queryWithClassName:@"Referrals"];
-    [query whereKey:@"referred" equalTo:myEmail];
-    [query orderByDescending:@"numReferrals"];
-    NSError *e;
-    NSArray* objects = [query findObjects:&e];
-    if (!e) {
-        referrals = [NSMutableArray arrayWithCapacity:objects.count];
-        for (int i = 0; i < objects.count; i++) {
-            Referral *r = [[Referral alloc] init];
-            PFObject *referralRow = [objects objectAtIndex:i];
-            r.referredBy = [referralRow objectForKey:@"referredBy"];
-            r.vid = [[referralRow objectForKey:@"vid"] intValue];
-            r.vendorName = [referralRow objectForKey:@"vendorName"];
-            r.numReferrals = [[referralRow objectForKey:@"numReferrals"] intValue];
-            [referrals addObject:r];
-        }
-    }
-    else {
-        NSLog(@"Error occurred in fetching referral data");
-    }
-}
+@synthesize referral;
+@synthesize referrers;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -98,12 +36,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    self.title = [NSString stringWithFormat:@"%@ Referrals", referral.vendorName];
+    referrers = referral.referredBy;
     
-    myEmail = [[PFUser currentUser] username];
-    
-    //[self addReferral];
-    [self getReferralData];
-    
+    NSLog(@"%d",[referrers count]);
+    NSLog(@"%@",referral.vendorName);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -155,15 +93,13 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [referrals count];
+    return [referrers count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ReferralCell"];
-	Referral *r = [self.referrals objectAtIndex:indexPath.row];
-	cell.textLabel.text = r.vendorName;
-	cell.detailTextLabel.text = [NSString stringWithFormat:@"Referred by %d friends",r.numReferrals];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ReferDetailsCell"];
+	cell.textLabel.text = [referrers objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -210,7 +146,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     */
 }
 
 @end

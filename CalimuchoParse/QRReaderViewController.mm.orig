@@ -99,6 +99,7 @@
             NSLog(@"Count request succeeded");
             
             if (self.isViewLoaded) {
+<<<<<<< HEAD
                 // vendor is in the database
                 if (count == 1) {
                     // create new VendorSingleView object
@@ -119,6 +120,10 @@
                     // display message in previous view
                     [resultsView setText:[NSString stringWithFormat:@"%@ is NOT in the database", resultsToDisplay]];
                     [self dismissModalViewControllerAnimated:NO];
+=======
+                if (count == 1) {
+                    // stuff
+>>>>>>> 26da122311a6fef3be91cfc4bcf88069e4508374
                 }
             }
         } else {

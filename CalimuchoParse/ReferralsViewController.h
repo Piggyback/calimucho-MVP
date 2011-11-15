@@ -14,5 +14,6 @@
 @property (nonatomic, strong) NSString *myEmail;
 
 - (void)getReferralData;
+- (void)addReferral;
 
 @end

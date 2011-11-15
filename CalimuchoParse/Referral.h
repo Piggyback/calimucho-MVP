@@ -10,10 +10,10 @@
 
 @interface Referral : NSObject
 
-@property (nonatomic, strong) NSString* referrer;
 @property (nonatomic, strong) NSString* referred;
 @property (nonatomic, assign) int vid;
-@property (nonatomic, assign) BOOL completed;
-
+@property (nonatomic, strong) NSString* vendorName;
+@property (nonatomic, strong) NSMutableArray* referredBy;
+@property (nonatomic, assign) int numReferrals;
 
 @end

@@ -17,7 +17,6 @@
 		3E9B2A71146DD82000E0EC6E /* VendorSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9B2A70146DD82000E0EC6E /* VendorSingleViewController.m */; };
 		F919DE11146B95150029D85E /* ReferralsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F919DE10146B95150029D85E /* ReferralsViewController.m */; };
 		F919DE14146B95990029D85E /* Referral.m in Sources */ = {isa = PBXBuildFile; fileRef = F919DE13146B95990029D85E /* Referral.m */; };
-		F93B068A146F314300C112C7 /* ReferralDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B0689146F314300C112C7 /* ReferralDetailViewController.m */; };
 		F952DD351464B76A00A14A38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD341464B76A00A14A38 /* UIKit.framework */; };
 		F952DD371464B76A00A14A38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD361464B76A00A14A38 /* Foundation.framework */; };
 		F952DD391464B76A00A14A38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F952DD381464B76A00A14A38 /* CoreGraphics.framework */; };
@@ -93,8 +92,6 @@
 		F919DE10146B95150029D85E /* ReferralsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferralsViewController.m; sourceTree = "<group>"; };
 		F919DE12146B95990029D85E /* Referral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Referral.h; sourceTree = "<group>"; };
 		F919DE13146B95990029D85E /* Referral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Referral.m; sourceTree = "<group>"; };
-		F93B0688146F314300C112C7 /* ReferralDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferralDetailViewController.h; sourceTree = "<group>"; };
-		F93B0689146F314300C112C7 /* ReferralDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferralDetailViewController.m; sourceTree = "<group>"; };
 		F952DD301464B76A00A14A38 /* CalimuchoParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalimuchoParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F952DD341464B76A00A14A38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F952DD361464B76A00A14A38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -249,8 +246,6 @@
 				F965532E1469235C00E138ED /* AddFriendsViewController.m */,
 				F919DE0F146B95150029D85E /* ReferralsViewController.h */,
 				F919DE10146B95150029D85E /* ReferralsViewController.m */,
-				F93B0688146F314300C112C7 /* ReferralDetailViewController.h */,
-				F93B0689146F314300C112C7 /* ReferralDetailViewController.m */,
 				F96D4B21146A0D9200194D6A /* Friend.h */,
 				F96D4B22146A0D9200194D6A /* Friend.m */,
 				F98980A71467FB140008EC4A /* Vendor.h */,
@@ -439,7 +434,6 @@
 				F919DE11146B95150029D85E /* ReferralsViewController.m in Sources */,
 				F919DE14146B95990029D85E /* Referral.m in Sources */,
 				3E9B2A71146DD82000E0EC6E /* VendorSingleViewController.m in Sources */,
-				F93B068A146F314300C112C7 /* ReferralDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

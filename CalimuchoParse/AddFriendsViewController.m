@@ -8,7 +8,6 @@
 
 #import "AddFriendsViewController.h"
 #import "Parse/Parse.h"
-#import "CMAppDelegate.h"
 #import "ShowFriendsViewController.h"
 #import "Friend.h"
 
@@ -93,8 +92,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    CMAppDelegate *appDelegate = (CMAppDelegate *)[[UIApplication sharedApplication] delegate];
-    myEmail = appDelegate.myEmail;
+    //CMAppDelegate *appDelegate = (CMAppDelegate *)[[UIApplication sharedApplication] delegate];
+    myEmail = [[PFUser currentUser] username];
 }
 
 

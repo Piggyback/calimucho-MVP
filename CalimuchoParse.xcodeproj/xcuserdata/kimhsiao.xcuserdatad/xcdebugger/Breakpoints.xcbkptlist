@@ -37,11 +37,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "CalimuchoParse/ShowFriendsViewController.m"
-         timestampString = "342704415.13036"
+         timestampString = "343009772.372609"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "107"
-         endingLineNumber = "107"
+         startingLineNumber = "106"
+         endingLineNumber = "106"
          landmarkName = "-viewWillAppear:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -51,25 +51,25 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "CalimuchoParse/ShowFriendsViewController.m"
-         timestampString = "342706953.786918"
+         timestampString = "343009772.372609"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "148"
-         endingLineNumber = "148"
+         startingLineNumber = "147"
+         endingLineNumber = "147"
          landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "CalimuchoParse/ShowFriendsViewController.m"
-         timestampString = "342691410.477116"
+         timestampString = "343009772.372609"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "32"
-         endingLineNumber = "32"
+         startingLineNumber = "31"
+         endingLineNumber = "31"
          landmarkName = "-initWithCoder:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -79,11 +79,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "CalimuchoParse/ShowFriendsViewController.m"
-         timestampString = "342706953.786918"
+         timestampString = "343009772.372609"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "149"
-         endingLineNumber = "149"
+         startingLineNumber = "148"
+         endingLineNumber = "148"
          landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -93,13 +93,39 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "CalimuchoParse/ShowFriendsViewController.m"
-         timestampString = "342706953.786918"
+         timestampString = "343009772.372609"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "152"
-         endingLineNumber = "152"
+         startingLineNumber = "151"
+         endingLineNumber = "151"
          landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "CalimuchoParse/QRReaderViewController.mm"
+         timestampString = "342922414.932726"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "102"
+         endingLineNumber = "102"
+         landmarkName = "-zxingController:didScanResult:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "CalimuchoParse/ReferralDetailViewController.h"
+         timestampString = "342840695.926363"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "20"
+         endingLineNumber = "20">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
