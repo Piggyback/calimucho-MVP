@@ -344,7 +344,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="nMe-AC-Une"/>
+                    <navigationItem key="navigationItem" id="nMe-AC-Une">
+                        <barButtonItem key="rightBarButtonItem" title="Refer Friends" id="kIz-zL-zWh">
+                            <connections>
+                                <segue destination="ssd-Pm-WjO" kind="push" identifier="referFriendsSegue" id="Pg0-CQ-Jov"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="juiceStatus" destination="ZzA-aY-mdZ" id="pqc-u8-zF3"/>
                         <outlet property="pointsProgressBar" destination="Izt-B9-QNV" id="xau-dQ-NAD"/>
@@ -353,6 +359,59 @@
                 </viewController>
             </objects>
             <point key="canvasLocation" x="447" y="-301"/>
+        </scene>
+        <scene sceneID="Tj4-oH-MIJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Pi-P1-icL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="ssd-Pm-WjO" customClass="ReferFriendsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="THM-3a-au2">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="peK-oH-sK8">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Refer!">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="referButton:" destination="ssd-Pm-WjO" eventType="touchUpInside" id="DJT-cb-cJw"/>
+                            </connections>
+                        </button>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReferFriendCell" textLabel="bBa-bl-JkZ" style="IBUITableViewCellStyleDefault" id="ukj-OV-BM6">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bBa-bl-JkZ">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ssd-Pm-WjO" id="zbX-lX-r2c"/>
+                            <outlet property="delegate" destination="ssd-Pm-WjO" id="fIt-FE-uKf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="CCE-Zu-3sB"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="833" y="-301"/>
         </scene>
         <scene sceneID="LjH-EJ-Qf3">
             <objects>
@@ -561,6 +620,69 @@
             <point key="canvasLocation" x="-871" y="-1552"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="AddFriendsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddFriendsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addFriend:"/>
+                <relationship kind="outlet" name="friendEmail" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CMViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backgroundTouched:"/>
+                <relationship kind="action" name="signIn:"/>
+                <relationship kind="action" name="textFieldReturn:"/>
+                <relationship kind="outlet" name="email" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="CreateAcctViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateAcctViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backgroundTouched:"/>
+                <relationship kind="action" name="createAcct:"/>
+                <relationship kind="action" name="textFieldReturn:"/>
+                <relationship kind="outlet" name="email" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="QRReaderViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QRReaderViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="scanPressed:"/>
+                <relationship kind="outlet" name="resultsView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="ReferFriendsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReferFriendsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="referButton:"/>
+            </relationships>
+        </class>
+        <class className="ReferralDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReferralDetailViewController.h"/>
+        </class>
+        <class className="ReferralsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReferralsViewController.h"/>
+        </class>
+        <class className="ShowFriendsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShowFriendsViewController.h"/>
+        </class>
+        <class className="VendorSingleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VendorSingleViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="juiceStatus" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsProgressBar" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="vendorNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="VendorViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VendorViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

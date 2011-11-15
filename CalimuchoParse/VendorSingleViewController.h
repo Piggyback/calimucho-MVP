@@ -8,10 +8,11 @@
 
 //#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "Vendor.h"
 
 @interface VendorSingleViewController : UIViewController {
     IBOutlet UILabel *vendorNameLabel;
-    NSString *vendorNameString;
+    Vendor* vendor;
     IBOutlet UIProgressView *pointsProgressBar;
     IBOutlet UILabel *juiceStatus;
     
@@ -31,7 +32,7 @@
 //- (void)setFakeKim:(int)temp;
 
 @property (nonatomic, retain) IBOutlet UILabel *vendorNameLabel;
-@property (nonatomic, retain) NSString *vendorNameString;
+@property (nonatomic, retain) Vendor *vendor;
 @property (nonatomic, retain) IBOutlet UIProgressView *pointsProgressBar;
 @property (nonatomic, retain) IBOutlet UILabel *juiceStatus;
 @property (nonatomic, retain) NSString *myEmail;
