@@ -155,4 +155,15 @@
      */
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"fromReferralDetail"]) {
+        
+        QRReaderViewController *qrvc = [segue destinationViewController];
+        [qrvc setFromReferralDetail:TRUE];   
+        NSString *referrer = [referrers objectAtIndex:[[self.tableView indexPathForSelectedRow] row]];
+        [qrvc setReferrer:referrer];
+    }
+    
+}
+
 @end

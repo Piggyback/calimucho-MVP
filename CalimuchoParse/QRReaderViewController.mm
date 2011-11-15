@@ -18,6 +18,17 @@
 @implementation QRReaderViewController
 @synthesize resultsView;
 @synthesize resultsToDisplay;
+@synthesize referrer;
+
+- (id)initWithCoder:(NSCoder *)inCoder
+{
+    self = [super initWithCoder:inCoder];
+    fromReferralDetail = false;
+    referrer = nil;
+    NSLog(@"initWithCoder for VendorSingleViewController");
+    
+    return self;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -107,6 +118,10 @@
                     // set vc's (unlinked to storyboard) string instance variable to QR code result
                     [vc setVendorNameString:result];
                     [vc setFromQRreader:TRUE];
+                    if (fromReferralDetail == TRUE) {
+                        [vc setFromReferralDetail:TRUE];
+                        [vc setReferrer:referrer];
+                    }
 //                    vc.kim = 10;
 //                    Vendor *v = [[Vendor alloc] init];
 //                    v.name = @"mgao";
@@ -131,6 +146,13 @@
 
 - (void)zxingControllerDidCancel:(ZXingWidgetController*)controller {
     [self dismissModalViewControllerAnimated:YES];
+}
+
+-(void)setFromReferralDetail:(bool)aBool {
+    fromReferralDetail = aBool;
+}
+-(bool)fromReferralDetail {
+    return fromReferralDetail;
 }
 
 @end

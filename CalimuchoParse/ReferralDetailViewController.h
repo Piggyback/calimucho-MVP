@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Referral.h"
+#import "QRReaderViewController.h"
 
 @interface ReferralDetailViewController : UITableViewController
 

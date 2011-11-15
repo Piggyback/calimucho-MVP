@@ -12,11 +12,16 @@
 @interface QRReaderViewController : UIViewController <ZXingDelegate> {
     IBOutlet UITextView *resultsView;
     NSString *resultsToDisplay;
+    bool fromReferralDetail;
+    NSString *referrer;
 }
 
 @property (nonatomic, retain) IBOutlet UITextView *resultsView;
 @property (nonatomic, copy) NSString *resultsToDisplay;
+@property (nonatomic, retain) NSString *referrer;
 
 
 - (IBAction)scanPressed:(id)sender;
+- (void)setFromReferralDetail:(bool)aBool;
+- (bool)fromReferralDetail;
 @end

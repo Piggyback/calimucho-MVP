@@ -15,6 +15,7 @@
 @synthesize pointsProgressBar;
 @synthesize juiceStatus;
 @synthesize myEmail;
+@synthesize referrer;
 
 //- (id)init
 //{
@@ -40,6 +41,7 @@
 {
     self = [super initWithCoder:inCoder];
     fromQRreader = false;
+    referrer = nil;
     NSLog(@"initWithCoder for VendorSingleViewController");
     
     return self;
@@ -97,28 +99,70 @@
     PFQuery *query = [PFQuery queryWithClassName:@"Points"];
     [query whereKey:@"username" equalTo:myEmail];
     [query whereKey:@"vendorname" equalTo:vendorNameString];
-    if ([query countObjects] < 1) {
+    NSArray* userArray = [query findObjects];
+    PFObject *userRow;
+    
+    if ([userArray count] < 1) {
         // add user to Points table
         PFObject *entry = [[PFObject alloc] initWithClassName:@"Points"];
         [entry setObject:[NSNumber numberWithInt:0] forKey:@"points"];
         [entry setObject:myEmail forKey:@"username"];
         [entry setObject:vendorNameString forKey:@"vendorname"];
         [entry save];
+        userRow = entry;
+    } else {
+            userRow = [userArray objectAtIndex:0];
     }
     
-    NSArray* userArray = [query findObjects];
-    PFObject *userRow = [userArray objectAtIndex:0];
     NSLog(@"Successfully retrieved user:%@ at:%@", [userRow objectForKey:@"username"], [userRow objectForKey:@"vendorname"]);
     
     NSNumber *points = [userRow objectForKey:@"points"];
     
     if (fromQRreader == TRUE) {
-        NSNumber *newPoints = [NSNumber numberWithInt:([points intValue] + 1)];
+        if ([points intValue] == 9) {
+            points = [NSNumber numberWithInt:0];
+        }
+        else {
+            points = [NSNumber numberWithInt:([points intValue] + 1)];
+        }
         // save new points back to parse
-        [userRow setObject:newPoints forKey:@"points"];
+        [userRow setObject:points forKey:@"points"];
         [userRow save];
-        [pointsProgressBar setProgress:([newPoints floatValue]/10.0)];
-        juiceStatus.text = [NSString stringWithFormat:@"%i more piggybacks to obtain JUICE", (10-[newPoints intValue])];
+        [pointsProgressBar setProgress:([points floatValue]/10.0)];
+        juiceStatus.text = [NSString stringWithFormat:@"%i more piggybacks to obtain JUICE", (10-[points intValue])];
+        
+        // check if user was referred by a friend
+        if (fromReferralDetail == TRUE) {
+            // check if friend is in points table
+            PFQuery *query2 = [PFQuery queryWithClassName:@"Points"];
+            [query2 whereKey:@"username" equalTo:referrer];
+            [query2 whereKey:@"vendorname" equalTo:vendorNameString];
+            NSArray* userArray2 = [query2 findObjects];
+            PFObject *userRow2;
+            
+            if ([userArray2 count] < 1) {
+                // add user to Points table
+                PFObject *entry = [[PFObject alloc] initWithClassName:@"Points"];
+                [entry setObject:[NSNumber numberWithInt:0] forKey:@"points"];
+                [entry setObject:referrer forKey:@"username"];
+                [entry setObject:vendorNameString forKey:@"vendorname"];
+                [entry save];
+                userRow2 = entry;
+            } else {
+                userRow2 = [userArray2 objectAtIndex:0];
+            }
+            
+            
+            NSNumber *points2 = [userRow2 objectForKey:@"points"];
+            if ([points2 intValue] == 9) {
+                points2 = [NSNumber numberWithInt:0];
+            } else {
+                points2 = [NSNumber numberWithInt:([points2 intValue] + 1 )];
+            }
+            
+            [userRow2 setObject:points2 forKey:@"points"];
+            [userRow2 save];
+        }
     } else {
         //TODO: Add users to points table if they do not exist
         //TODO: Once user reaches 10 points, reset to 0
@@ -151,6 +195,13 @@
 }
 -(bool)fromQRreader {
     return fromQRreader;
+}
+
+-(void)setFromReferralDetail:(bool)aBool {
+    fromReferralDetail = aBool;
+}
+-(bool)fromReferralDetail {
+    return fromReferralDetail;
 }
 
 

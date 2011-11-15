@@ -243,7 +243,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="eam-nX-IXk" kind="push" id="f6V-ND-600"/>
+                                    <segue destination="eam-nX-IXk" kind="push" identifier="fromReferralDetail" id="f6V-ND-600"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -561,63 +561,6 @@
             <point key="canvasLocation" x="-871" y="-1552"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="AddFriendsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddFriendsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addFriend:"/>
-                <relationship kind="outlet" name="friendEmail" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CMViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backgroundTouched:"/>
-                <relationship kind="action" name="signIn:"/>
-                <relationship kind="action" name="textFieldReturn:"/>
-                <relationship kind="outlet" name="email" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="CreateAcctViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateAcctViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backgroundTouched:"/>
-                <relationship kind="action" name="createAcct:"/>
-                <relationship kind="action" name="textFieldReturn:"/>
-                <relationship kind="outlet" name="email" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="QRReaderViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/QRReaderViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="scanPressed:"/>
-                <relationship kind="outlet" name="resultsView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="ReferralDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReferralDetailViewController.h"/>
-        </class>
-        <class className="ReferralsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReferralsViewController.h"/>
-        </class>
-        <class className="ShowFriendsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShowFriendsViewController.h"/>
-        </class>
-        <class className="VendorSingleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/VendorSingleViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="juiceStatus" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pointsProgressBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="vendorNameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="VendorViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/VendorViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
