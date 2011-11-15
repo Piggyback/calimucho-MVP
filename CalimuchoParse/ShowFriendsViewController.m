@@ -10,7 +10,6 @@
 #import "Parse/Parse.h"
 #import "Friend.h"
 #import "VendorViewController.h"
-#import "CMAppDelegate.h"
 
 @implementation ShowFriendsViewController
 
@@ -24,8 +23,8 @@
         if (myEmail == nil) {
             NSLog(@"init with coder for showfriendsviewcontroller");
             condition = [[NSLock alloc] init];
-            CMAppDelegate *appDelegate = (CMAppDelegate *)[[UIApplication sharedApplication] delegate];
-            myEmail = appDelegate.myEmail;
+            myEmail = [[PFUser currentUser] username];
+            NSLog(@"email is %@",myEmail);
             friends = [[NSMutableArray alloc] init];
         }
     }

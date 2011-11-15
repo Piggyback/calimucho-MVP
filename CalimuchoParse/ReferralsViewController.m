@@ -9,7 +9,6 @@
 #import "ReferralsViewController.h"
 #import "Parse/Parse.h"
 #import "Referral.h"
-#import "CMAppDelegate.h"
 #import "ReferralDetailViewController.h"
 
 @implementation ReferralsViewController {
@@ -100,8 +99,7 @@
 {
     [super viewDidLoad];
     
-    CMAppDelegate *appDelegate = (CMAppDelegate *)[[UIApplication sharedApplication] delegate];
-    myEmail = appDelegate.myEmail;
+    myEmail = [[PFUser currentUser] username];
     
     //[self addReferral];
     [self getReferralData];
