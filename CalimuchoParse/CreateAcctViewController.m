@@ -14,11 +14,11 @@
 
 - (IBAction)createAcct:(id)sender
 {    
-    NSString *regex = @".*@.*";
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+    NSString *emailRegex = @".*@.*";
+    NSPredicate *emailPred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     
     // email is not valid. show alert
-    if (![pred evaluateWithObject:email.text]){
+    if (![emailPred evaluateWithObject:email.text]){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Account Creation Failed" message:@"Invalid Email" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     }
