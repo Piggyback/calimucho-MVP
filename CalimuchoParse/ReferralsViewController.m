@@ -39,8 +39,8 @@
     PFObject *newR = [[PFObject alloc] initWithClassName:@"Referrals"];
     [newR setObject:myEmail forKey:@"referred"];
     [newR setObject:[NSNumber numberWithInt:2] forKey:@"vid"];
-    [newR setObject:@"Standard Cafe" forKey:@"vendorName"];
-    NSMutableArray* rArray = [NSMutableArray arrayWithObjects:@"chloesiu@gmail.com",@"jeffkuo@gmail.com",nil];
+    [newR setObject:@"Mucho Calimucho" forKey:@"vendorName"];
+    NSMutableArray* rArray = [NSMutableArray arrayWithObjects:@"kimhsiao@gmail.com",@"m",nil];
     NSNumber *num = [NSNumber numberWithInt:[rArray count]];
     [newR setObject:rArray forKey:@"referredBy"];
     [newR setObject:num forKey:@"numReferrals"];
@@ -101,7 +101,7 @@
     
     myEmail = [[PFUser currentUser] username];
     
-    //[self addReferral];
+//    [self addReferral];
     [self getReferralData];
     
     // Uncomment the following line to preserve selection between presentations.

@@ -243,7 +243,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="eam-nX-IXk" kind="push" id="f6V-ND-600"/>
+                                    <segue destination="eam-nX-IXk" kind="push" identifier="fromReferralDetail" id="f6V-ND-600"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

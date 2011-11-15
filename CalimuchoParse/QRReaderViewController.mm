@@ -19,6 +19,17 @@
 @synthesize resultsView;
 @synthesize resultsToDisplay;
 @synthesize vendor;
+@synthesize referrer;
+
+- (id)initWithCoder:(NSCoder *)inCoder
+{
+    self = [super initWithCoder:inCoder];
+    fromReferralDetail = false;
+    referrer = nil;
+    NSLog(@"initWithCoder for VendorSingleViewController");
+    
+    return self;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -129,6 +140,10 @@
                     [self getVendorData:result];
                     [vc setVendor:vendor];
                     [vc setFromQRreader:TRUE];
+                    if (fromReferralDetail == TRUE) {
+                        [vc setFromReferralDetail:TRUE];
+                        [vc setReferrer:referrer];
+                    }
 //                    vc.kim = 10;
 //                    Vendor *v = [[Vendor alloc] init];
 //                    v.name = @"mgao";
@@ -153,6 +168,13 @@
 
 - (void)zxingControllerDidCancel:(ZXingWidgetController*)controller {
     [self dismissModalViewControllerAnimated:YES];
+}
+
+-(void)setFromReferralDetail:(bool)aBool {
+    fromReferralDetail = aBool;
+}
+-(bool)fromReferralDetail {
+    return fromReferralDetail;
 }
 
 @end

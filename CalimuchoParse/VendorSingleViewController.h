@@ -13,12 +13,13 @@
 @interface VendorSingleViewController : UIViewController {
     IBOutlet UILabel *vendorNameLabel;
     Vendor* vendor;
-    //NSString *vendorNameString;
     IBOutlet UIProgressView *pointsProgressBar;
     IBOutlet UILabel *juiceStatus;
     
     NSString *myEmail;
     bool fromQRreader;
+    bool fromReferralDetail;
+    NSString *referrer;
     
 //    int kim;
 //    int fakeKim;
@@ -35,11 +36,14 @@
 @property (nonatomic, retain) IBOutlet UIProgressView *pointsProgressBar;
 @property (nonatomic, retain) IBOutlet UILabel *juiceStatus;
 @property (nonatomic, retain) NSString *myEmail;
+@property (nonatomic, retain) NSString *referrer;
 
 
 // override initWithCoder to display log message (default init for storyboard)
 -(id)initWithCoder:(NSCoder *)aDecoder;
 -(void)setFromQRreader:(bool)aBool;
 -(bool)fromQRreader;
+-(void)setFromReferralDetail:(bool)aBool;
+-(bool)fromReferralDetail;
 
 @end
