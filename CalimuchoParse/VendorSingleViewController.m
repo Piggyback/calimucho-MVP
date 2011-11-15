@@ -111,7 +111,7 @@
         [entry save];
         userRow = entry;
     } else {
-            userRow = [userArray objectAtIndex:0];
+        userRow = [userArray objectAtIndex:0];
     }
     
     NSLog(@"Successfully retrieved user:%@ at:%@", [userRow objectForKey:@"username"], [userRow objectForKey:@"vendorname"]);
