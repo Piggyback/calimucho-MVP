@@ -18,6 +18,7 @@
 @implementation QRReaderViewController
 @synthesize resultsView;
 @synthesize resultsToDisplay;
+@synthesize vendor;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -87,6 +88,26 @@
     [self presentModalViewController:widController animated:YES];
 }
 
+- (void) getVendorData:(NSString*) vendorName {
+    PFQuery *query = [PFQuery queryWithClassName:@"Vendors"];
+    [query whereKey:@"name" equalTo:vendorName];
+    NSError *e;
+    NSArray* objects = [query findObjects:&e];
+    if (!e) {
+        vendor = [[Vendor alloc] init];
+        PFObject *vendorRow = [objects objectAtIndex:0];
+        vendor.vid = [[vendorRow objectForKey:@"vid"] intValue];
+        vendor.name = [vendorRow objectForKey:@"name"];
+        vendor.address = [vendorRow objectForKey:@"address"];
+        vendor.hours = [vendorRow objectForKey:@"hours"];
+        vendor.phone = [[vendorRow objectForKey:@"phone"] intValue];
+    }
+    else {
+        NSLog(@"Error occurred in fetching vendor data");
+    }
+
+}
+
 - (void)zxingController:(ZXingWidgetController*)controller didScanResult:(NSString *)result {
     self.resultsToDisplay = result;
     
@@ -105,7 +126,8 @@
                     VendorSingleViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"singleVendor"];
 //                    VendorSingleViewController *vc = [[VendorSingleViewController alloc] init];
                     // set vc's (unlinked to storyboard) string instance variable to QR code result
-                    [vc setVendorNameString:result];
+                    [self getVendorData:result];
+                    [vc setVendor:vendor];
                     [vc setFromQRreader:TRUE];
 //                    vc.kim = 10;
 //                    Vendor *v = [[Vendor alloc] init];

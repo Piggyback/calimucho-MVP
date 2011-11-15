@@ -8,13 +8,15 @@
 
 #import "VendorSingleViewController.h"
 #import "CMAppDelegate.h"
+#import "ReferFriendsViewController.h"
 
 @implementation VendorSingleViewController
 @synthesize vendorNameLabel;
-@synthesize vendorNameString;
+//@synthesize vendorNameString;
 @synthesize pointsProgressBar;
 @synthesize juiceStatus;
 @synthesize myEmail;
+@synthesize vendor;
 
 //- (id)init
 //{
@@ -55,6 +57,13 @@
     return self;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"referFriendsSegue"]) {
+        ReferFriendsViewController *rfvc = [segue destinationViewController];
+        rfvc.vendor = vendor;
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
@@ -80,7 +89,7 @@
     [super viewDidLoad];
     
     // set label's text to vendor name
-    vendorNameLabel.text = vendorNameString;
+    vendorNameLabel.text = vendor.name;
     NSLog(@"from vsvc: %@", vendorNameLabel.text);
     if (fromQRreader == TRUE) {
         NSLog(@"from vsvc: fromQRreader=TRUE");
@@ -96,13 +105,13 @@
     // check if user is in Points table
     PFQuery *query = [PFQuery queryWithClassName:@"Points"];
     [query whereKey:@"username" equalTo:myEmail];
-    [query whereKey:@"vendorname" equalTo:vendorNameString];
+    [query whereKey:@"vendorname" equalTo:vendor.name];
     if ([query countObjects] < 1) {
         // add user to Points table
         PFObject *entry = [[PFObject alloc] initWithClassName:@"Points"];
         [entry setObject:[NSNumber numberWithInt:0] forKey:@"points"];
         [entry setObject:myEmail forKey:@"username"];
-        [entry setObject:vendorNameString forKey:@"vendorname"];
+        [entry setObject:vendor.name forKey:@"vendorname"];
         [entry save];
     }
     
@@ -131,7 +140,7 @@
  - (void)viewDidUnload
  {
  vendorNameLabel = nil;
- vendorNameString = nil;
+ //vendorNameString = nil;
 // pointsProgressBar = nil;
 // juiceStatus = nil;
 // myEmail = nil;

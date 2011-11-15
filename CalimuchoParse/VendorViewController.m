@@ -178,7 +178,8 @@
         
         VendorSingleViewController *vc = [segue destinationViewController];
         Vendor *vendor = [vendors objectAtIndex:[[self.tableView indexPathForSelectedRow] row]];
-        [vc setVendorNameString:vendor.name];        
+        //[vc setVendorNameString:vendor.name];   
+        vc.vendor = vendor;
     }
     
 }
