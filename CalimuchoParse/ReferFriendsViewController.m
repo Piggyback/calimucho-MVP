@@ -16,6 +16,7 @@
 @synthesize myEmail;
 @synthesize vendor;
 @synthesize friendsToRefer;
+@synthesize tableData;
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -23,6 +24,7 @@
         if (myEmail == nil) {
             myEmail = [[PFUser currentUser] username];
             friends = [[NSMutableArray alloc] init];
+            tableData = [[NSMutableArray alloc] init];
         }
     }
     return self;
@@ -45,6 +47,7 @@
             [self addReferral:cell.textLabel.text];
         }
     }
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)getFriendData {
@@ -81,6 +84,49 @@
         NSLog(@"Error occurred in fetching friend data");
     }
     
+}
+
+- (void) setReferredFriends {
+    NSMutableArray *referredFriendsArr = [[NSMutableArray alloc] init];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Referrals"];
+    [query whereKey:@"vendorName" equalTo:vendor.name];
+    NSError *e;
+    NSArray* objects = [query findObjects:&e];
+    if (!e) {
+        for (int i = 0; i < [objects count]; i++) {
+            // if i have already referred to this person, add them to the 'already referred list'
+            PFObject *p = [objects objectAtIndex:i];
+            if ([[p objectForKey:@"referredBy"] containsObject:myEmail]) {
+                NSString *friend = [[NSString alloc] init];
+                friend = [p objectForKey:@"referred"];
+                [referredFriendsArr addObject:friend];
+            }
+        }
+    }
+    else {
+        NSLog(@"Error occurred in fetching referral data");
+    }
+    
+    NSDictionary *referredFriendsDict = [NSDictionary dictionaryWithObject:referredFriendsArr forKey:@"Friends"];
+    [tableData addObject:referredFriendsDict];
+}
+
+- (void) setNotReferredFriends {
+    NSMutableArray *notReferredFriendsArr = [[NSMutableArray alloc] init];
+    
+    NSDictionary *referredFriendsDict = [tableData objectAtIndex:0];
+    NSArray *referredFriendsArr = [referredFriendsDict objectForKey:@"Friends"];
+                                   
+    for (int i = 0; i < [friends count]; i++) {
+        NSString* friend = [[friends objectAtIndex:i] email];
+        if (![referredFriendsArr containsObject:friend]) {
+            [notReferredFriendsArr addObject:[[friends objectAtIndex:i] email]];
+        }
+    }
+    
+    NSDictionary *notReferredFriendsDict = [NSDictionary dictionaryWithObject:notReferredFriendsArr forKey:@"Friends"];
+    [tableData insertObject:notReferredFriendsDict atIndex:0];
 }
 
 - (void) addReferral:(NSString*)referredTo {
@@ -152,8 +198,13 @@
 {
     [super viewDidLoad];
     
+    self.title = vendor.name;
+    
     [self getFriendData];
+    [self setReferredFriends];
+    [self setNotReferredFriends];
 
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -199,20 +250,29 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return [tableData count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section
-    return [friends count];
+    NSDictionary *dictionary = [tableData objectAtIndex:section];
+    NSArray *array = [dictionary objectForKey:@"Friends"];
+    return [array count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ReferFriendCell"];
-    Friend *friend = [self.friends objectAtIndex:indexPath.row];
-	cell.textLabel.text = friend.email;
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ReferFriendCell"];
+    }
+
+    NSDictionary *dictionary = [tableData objectAtIndex:indexPath.section];
+    NSArray *array = [dictionary objectForKey:@"Friends"];
+    NSString *cellValue = [array objectAtIndex:indexPath.row];
+    cell.textLabel.text = cellValue;
+    
     return cell;
 }
 
@@ -257,39 +317,93 @@
 
 #pragma mark - Table view delegate
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    
+    if(section == 0)
+        return @"Select Friends To Refer";
+    else
+        return @"Friends You've Referred";
+}
+
+//- (NSString *)tableView:(UITableView *)tv titleForFooterInSection:(NSInteger)section {
+//    NSDictionary *unreferredFriendsDict = [tableData objectAtIndex:0];
+//    NSArray *unreferredFriendsArr = [unreferredFriendsDict objectForKey:@"Friends"];
+//    if (section == 0 && [unreferredFriendsArr count] == 0) {
+//        UILabel *footerText = [[UILabel alloc] init];
+//        footerText.text = @"You have already referred all of your friends!";
+//        return (NSString*)footerText;
+//        //return @"You have already referred all of your friends!";
+//    }
+//    else
+//        return nil;
+//}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    if (cell.accessoryType == UITableViewCellAccessoryNone) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    } else if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
-        cell.accessoryType = UITableViewCellAccessoryNone;
+    if ([indexPath section] == 0) { 
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        if (cell.accessoryType == UITableViewCellAccessoryNone) {
+            cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        } else if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
+            cell.accessoryType = UITableViewCellAccessoryNone;
+        }
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-//- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-//    if(footerView == nil) {
-//        footerView  = [[UIView alloc] init];
-//
-//        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//        [button setFrame:CGRectMake(10, 3, 300, 200)];
-//
-//        [button setTitle:@"Refer!" forState:UIControlStateNormal];
-//
-//        [button.titleLabel setFont:[UIFont boldSystemFontOfSize:20]];
-//        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//
-//        [button addTarget:self action:@selector(deleteThing:) forControlEvents:UIControlEventTouchUpInside];
-//
-//        [footerView addSubview:button];
-//        tableView.tableFooterView = footerView;
-//    }
-//    return footerView;
-//}
-//
-//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-//    return 200;
-//}
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    NSDictionary *unreferredFriendsDict = [tableData objectAtIndex:0];
+    NSArray *unreferredFriendsArr = [unreferredFriendsDict objectForKey:@"Friends"];
+    
+    // if you have no unreferred friends, then say so
+    if ([unreferredFriendsArr count] == 0 && section == 0) {
+        UIView* v = [[UIView alloc] initWithFrame:CGRectMake(10.0, 0.0, 100.0, 40.0)];
+        
+        UILabel *footerText = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 100, 40)];
+        footerText.text = @"You have referred all of your friends!";
+        footerText.lineBreakMode = UILineBreakModeWordWrap;
+        footerText.font = [UIFont boldSystemFontOfSize:16];
+        footerText.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
+        [footerText sizeToFit];
+        
+        [v addSubview:footerText];
+        
+        return v;
+    }    
+    
+    // if you have unreferred friends, add a button for referring
+    else if (section == 0) {
+        if(footerView == nil) {
+            UIView* v = [[UIView alloc] initWithFrame:CGRectMake(10.0, 0.0, 300.0, 40.0)];
+            
+            // create the button object
+            UIButton* b = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+            b.frame = CGRectMake(70.0, 0.0, 180, 40.0);
+            [b setTitle:@"Refer Friends!" forState:UIControlStateNormal];
+            // this sets up the callback for when the user hits the button
+            [b addTarget:self action:@selector(referButton:) forControlEvents:UIControlEventTouchUpInside];
+            
+            // add the button to the parent view
+            [v addSubview:b];
+            
+            return v;
+        }
+    }
+    
+    // otherwise, you should have no footer
+    return footerView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    NSDictionary *unreferredFriendsDict = [tableData objectAtIndex:0];
+    NSArray *unreferredFriendsArr = [unreferredFriendsDict objectForKey:@"Friends"];
+    
+    if ([unreferredFriendsArr count] == 0 && section == 0)
+        return 40;
+    else if (section == 0)
+        return 65;
+    else
+        return 0;
+}
 
 @end

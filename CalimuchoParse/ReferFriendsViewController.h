@@ -17,6 +17,7 @@
 @property (nonatomic, strong) NSString *myEmail;
 @property (nonatomic, strong) Vendor *vendor;
 @property (nonatomic, strong) NSMutableArray *friendsToRefer;
+@property (nonatomic, strong) NSMutableArray *tableData;
 
 - (IBAction)referButton:(id)sender;
 - (void)getFriendData;

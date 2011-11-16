@@ -161,12 +161,54 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "CalimuchoParse/ReferFriendsViewController.m"
-         timestampString = "343050320.500746"
+         timestampString = "343130027.888715"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "50"
-         endingLineNumber = "50"
+         startingLineNumber = "53"
+         endingLineNumber = "53"
          landmarkName = "-getFriendData"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "CalimuchoParse/ReferFriendsViewController.m"
+         timestampString = "343131276.462214"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "110"
+         endingLineNumber = "110"
+         landmarkName = "-setReferredFriends"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "CalimuchoParse/ReferFriendsViewController.m"
+         timestampString = "343131276.462214"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "112"
+         endingLineNumber = "112"
+         landmarkName = "-setReferredFriends"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "CalimuchoParse/ReferFriendsViewController.m"
+         timestampString = "343131276.462214"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "117"
+         endingLineNumber = "117"
+         landmarkName = "-setNotReferredFriends"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
