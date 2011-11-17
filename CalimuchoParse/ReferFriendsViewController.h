@@ -18,9 +18,10 @@
 @property (nonatomic, strong) Vendor *vendor;
 @property (nonatomic, strong) NSMutableArray *friendsToRefer;
 @property (nonatomic, strong) NSMutableArray *tableData;
+@property (nonatomic, strong) NSMutableArray *rowCheckArray;
 
 - (IBAction)referButton:(id)sender;
 - (void)getFriendData;
 - (void) addReferral:(NSString*)referredTo;
-
+- (void) initCheckArray;
 @end

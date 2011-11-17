@@ -17,6 +17,7 @@
 @synthesize vendor;
 @synthesize friendsToRefer;
 @synthesize tableData;
+@synthesize rowCheckArray;
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -25,6 +26,7 @@
             myEmail = [[PFUser currentUser] username];
             friends = [[NSMutableArray alloc] init];
             tableData = [[NSMutableArray alloc] init];
+            rowCheckArray = [[NSMutableArray alloc] init];
         }
     }
     return self;
@@ -129,6 +131,14 @@
     [tableData insertObject:notReferredFriendsDict atIndex:0];
 }
 
+- (void)initCheckArray {
+    NSDictionary *unreferredFriendsDict = [tableData objectAtIndex:0];
+    NSArray *unreferredFriendsArr = [unreferredFriendsDict objectForKey:@"Friends"];
+    for (int i = 0; i < [unreferredFriendsArr count]; i++) {
+        [rowCheckArray addObject:[NSNumber numberWithBool:NO]];
+    }
+}
+
 - (void) addReferral:(NSString*)referredTo {
     PFQuery *query = [PFQuery queryWithClassName:@"Referrals"];
     [query whereKey:@"referred" equalTo:referredTo];
@@ -203,6 +213,7 @@
     [self getFriendData];
     [self setReferredFriends];
     [self setNotReferredFriends];
+    [self initCheckArray];
 
     
     // Uncomment the following line to preserve selection between presentations.
@@ -273,6 +284,16 @@
     NSString *cellValue = [array objectAtIndex:indexPath.row];
     cell.textLabel.text = cellValue;
     
+    if ([indexPath section] == 0) {
+        if ([[rowCheckArray objectAtIndex:indexPath.row] boolValue]) {
+            cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        } else {
+            cell.accessoryType = UITableViewCellAccessoryNone;
+        }
+    }
+    else if ([indexPath section] == 1) {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     return cell;
 }
 
@@ -340,14 +361,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([indexPath section] == 0) { 
-        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-        if (cell.accessoryType == UITableViewCellAccessoryNone) {
-            cell.accessoryType = UITableViewCellAccessoryCheckmark;
-        } else if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
-            cell.accessoryType = UITableViewCellAccessoryNone;
-        }
-    }
+    if ([indexPath section] == 0) {
+        [rowCheckArray replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:![[rowCheckArray objectAtIndex:indexPath.row] boolValue]]];
+        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }    
+    
+//    if ([indexPath section] == 0) { 
+//        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//        if (cell.accessoryType == UITableViewCellAccessoryNone) {
+//            cell.accessoryType = UITableViewCellAccessoryCheckmark;
+//        } else if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
+//            cell.accessoryType = UITableViewCellAccessoryNone;
+//        }
+//    }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
