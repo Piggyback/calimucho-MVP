@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E5ABEE01474F7EA0096DF84 /* piggyback_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5ABEDC1474F7EA0096DF84 /* piggyback_logo.png */; };
+		3E5ABEE11474F7EA0096DF84 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5ABEDD1474F7EA0096DF84 /* Icon.png */; };
+		3E5ABEE21474F7EA0096DF84 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5ABEDE1474F7EA0096DF84 /* Icon@2x.png */; };
+		3E5ABEE31474F7EA0096DF84 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 3E5ABEDF1474F7EA0096DF84 /* iTunesArtwork */; };
 		3E8955FD146A1D3700A4AB70 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8955FC146A1D3700A4AB70 /* AVFoundation.framework */; };
 		3E8955FF146A1D4300A4AB70 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8955FE146A1D4300A4AB70 /* CoreVideo.framework */; };
 		3E895601146A1D4C00A4AB70 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E895600146A1D4C00A4AB70 /* CoreMedia.framework */; };
@@ -15,6 +19,8 @@
 		3E895607146A1D6300A4AB70 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E895606146A1D6300A4AB70 /* AddressBookUI.framework */; };
 		3E89560F146A1F8C00A4AB70 /* QRReaderViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E89560E146A1F8C00A4AB70 /* QRReaderViewController.mm */; };
 		3E9B2A71146DD82000E0EC6E /* VendorSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9B2A70146DD82000E0EC6E /* VendorSingleViewController.m */; };
+		3EC732A51474890B00E8E1A3 /* pig_nose5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC732A41474890B00E8E1A3 /* pig_nose5.png */; };
+		3EC732A81474B36C00E8E1A3 /* RedeemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC732A71474B36C00E8E1A3 /* RedeemViewController.m */; };
 		F919DE11146B95150029D85E /* ReferralsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F919DE10146B95150029D85E /* ReferralsViewController.m */; };
 		F919DE14146B95990029D85E /* Referral.m in Sources */ = {isa = PBXBuildFile; fileRef = F919DE13146B95990029D85E /* Referral.m */; };
 		F93B068A146F314300C112C7 /* ReferralDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B0689146F314300C112C7 /* ReferralDetailViewController.m */; };
@@ -80,6 +86,10 @@
 
 /* Begin PBXFileReference section */
 		3E398BB9146A7B9B00B25530 /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = "zxing-read-only/iphone/ZXingWidget/ZXingWidget.xcodeproj"; sourceTree = "<group>"; };
+		3E5ABEDC1474F7EA0096DF84 /* piggyback_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piggyback_logo.png; sourceTree = "<group>"; };
+		3E5ABEDD1474F7EA0096DF84 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3E5ABEDE1474F7EA0096DF84 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		3E5ABEDF1474F7EA0096DF84 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		3E8955FC146A1D3700A4AB70 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3E8955FE146A1D4300A4AB70 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		3E895600146A1D4C00A4AB70 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -90,6 +100,9 @@
 		3E89560E146A1F8C00A4AB70 /* QRReaderViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QRReaderViewController.mm; sourceTree = "<group>"; };
 		3E9B2A6F146DD82000E0EC6E /* VendorSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendorSingleViewController.h; sourceTree = "<group>"; };
 		3E9B2A70146DD82000E0EC6E /* VendorSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendorSingleViewController.m; sourceTree = "<group>"; };
+		3EC732A41474890B00E8E1A3 /* pig_nose5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig_nose5.png; sourceTree = "<group>"; };
+		3EC732A61474B36C00E8E1A3 /* RedeemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedeemViewController.h; sourceTree = "<group>"; };
+		3EC732A71474B36C00E8E1A3 /* RedeemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedeemViewController.m; sourceTree = "<group>"; };
 		F919DE0F146B95150029D85E /* ReferralsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferralsViewController.h; sourceTree = "<group>"; };
 		F919DE10146B95150029D85E /* ReferralsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferralsViewController.m; sourceTree = "<group>"; };
 		F919DE12146B95990029D85E /* Referral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Referral.h; sourceTree = "<group>"; };
@@ -191,6 +204,18 @@
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
+		3EC7329514747F2200E8E1A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E5ABEDC1474F7EA0096DF84 /* piggyback_logo.png */,
+				3E5ABEDD1474F7EA0096DF84 /* Icon.png */,
+				3E5ABEDE1474F7EA0096DF84 /* Icon@2x.png */,
+				3E5ABEDF1474F7EA0096DF84 /* iTunesArtwork */,
+				3EC732A41474890B00E8E1A3 /* pig_nose5.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F952DD251464B76A00A14A38 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +223,7 @@
 				F952DD581464B76A00A14A38 /* CalimuchoParseTests */,
 				F952DD331464B76A00A14A38 /* Frameworks */,
 				F952DD311464B76A00A14A38 /* Products */,
+				3EC7329514747F2200E8E1A3 /* Resources */,
 				3E8955F8146A1BC300A4AB70 /* Dependencies */,
 			);
 			sourceTree = "<group>";
@@ -266,6 +292,8 @@
 				3E9B2A70146DD82000E0EC6E /* VendorSingleViewController.m */,
 				F9F260ED147211E000FEEF56 /* ReferFriendsViewController.h */,
 				F9F260EE147211E000FEEF56 /* ReferFriendsViewController.m */,
+				3EC732A61474B36C00E8E1A3 /* RedeemViewController.h */,
+				3EC732A71474B36C00E8E1A3 /* RedeemViewController.m */,
 				F952DD3B1464B76A00A14A38 /* Supporting Files */,
 			);
 			path = CalimuchoParse;
@@ -397,6 +425,11 @@
 			files = (
 				F952DD3F1464B76A00A14A38 /* InfoPlist.strings in Resources */,
 				F952DD481464B76A00A14A38 /* MainStoryboard.storyboard in Resources */,
+				3EC732A51474890B00E8E1A3 /* pig_nose5.png in Resources */,
+				3E5ABEE01474F7EA0096DF84 /* piggyback_logo.png in Resources */,
+				3E5ABEE11474F7EA0096DF84 /* Icon.png in Resources */,
+				3E5ABEE21474F7EA0096DF84 /* Icon@2x.png in Resources */,
+				3E5ABEE31474F7EA0096DF84 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +479,7 @@
 				3E9B2A71146DD82000E0EC6E /* VendorSingleViewController.m in Sources */,
 				F93B068A146F314300C112C7 /* ReferralDetailViewController.m in Sources */,
 				F9F260EF147211E000FEEF56 /* ReferFriendsViewController.m in Sources */,
+				3EC732A81474B36C00E8E1A3 /* RedeemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
