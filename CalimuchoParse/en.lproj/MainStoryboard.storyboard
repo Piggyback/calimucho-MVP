@@ -347,7 +347,7 @@
                     <navigationItem key="navigationItem" id="nMe-AC-Une">
                         <barButtonItem key="rightBarButtonItem" title="Refer Friends" id="kIz-zL-zWh">
                             <connections>
-                                <segue destination="ssd-Pm-WjO" kind="push" identifier="referFriendsSegue" id="Pg0-CQ-Jov"/>
+                                <segue destination="a45-TT-rTW" kind="push" identifier="referFriendsSegue" id="UPS-q5-EYW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -360,43 +360,77 @@
             </objects>
             <point key="canvasLocation" x="447" y="-301"/>
         </scene>
-        <scene sceneID="Tj4-oH-MIJ">
+        <scene sceneID="tfZ-xu-GYP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Pi-P1-icL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="ssd-Pm-WjO" customClass="ReferFriendsViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="33" sectionHeaderHeight="28" sectionFooterHeight="1" id="THM-3a-au2">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIP-lP-isa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="a45-TT-rTW" customClass="ReferFriendsVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gef-0D-Kcb">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReferFriendCell" textLabel="bBa-bl-JkZ" style="IBUITableViewCellStyleDefault" id="ukj-OV-BM6">
-                                <rect key="frame" x="0.0" y="28" width="320" height="33"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" id="bBa-bl-JkZ">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="9se-qh-RX5">
+                                <rect key="frame" x="0.0" y="364" width="320" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="TsH-R7-jRX">
+                                <rect key="frame" x="0.0" y="317" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ste-cH-NTZ">
+                                        <rect key="frame" x="64" y="6" width="192" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Refer Selected Friends!">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="referButton:" destination="a45-TT-rTW" eventType="touchUpInside" id="Iq1-cC-Kul"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="33" sectionHeaderHeight="28" sectionFooterHeight="22" id="A3Y-9i-doz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="315"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReferFriendCell" textLabel="3sl-dc-a4K" style="IBUITableViewCellStyleDefault" id="bmX-tR-e2f">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="33"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ssd-Pm-WjO" id="zbX-lX-r2c"/>
-                            <outlet property="delegate" destination="ssd-Pm-WjO" id="fIt-FE-uKf"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="CCE-Zu-3sB"/>
-                </tableViewController>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3sl-dc-a4K">
+                                                    <rect key="frame" x="10" y="0.0" width="300" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="a45-TT-rTW" id="HBU-Ne-wMu"/>
+                                    <outlet property="delegate" destination="a45-TT-rTW" id="1ZA-5p-APs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ekD-xZ-bnG"/>
+                </viewController>
             </objects>
-            <point key="canvasLocation" x="833" y="-301"/>
+            <point key="canvasLocation" x="826" y="-301"/>
         </scene>
         <scene sceneID="LjH-EJ-Qf3">
             <objects>
@@ -642,8 +676,8 @@
                 <relationship kind="outlet" name="resultsView" candidateClass="UITextView"/>
             </relationships>
         </class>
-        <class className="ReferFriendsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReferFriendsViewController.h"/>
+        <class className="ReferFriendsVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReferFriendsVC.h"/>
             <relationships>
                 <relationship kind="action" name="referButton:"/>
             </relationships>

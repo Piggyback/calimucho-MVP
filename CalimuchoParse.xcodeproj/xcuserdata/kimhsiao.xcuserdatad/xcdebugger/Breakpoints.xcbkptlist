@@ -239,5 +239,19 @@
          landmarkName = "-setNotReferredFriends"
          landmarkType = "5">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "CalimuchoParse/ReferFriendsVC.h"
+         timestampString = "343194079.000798"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "16"
+         endingLineNumber = "16"
+         landmarkName = "vendor"
+         landmarkType = "19">
+      </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
