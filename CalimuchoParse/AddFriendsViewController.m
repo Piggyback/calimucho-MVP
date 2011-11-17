@@ -26,23 +26,37 @@
     return self;
 }
 
+- (IBAction)textFieldReturn:(id)sender
+{
+    [sender resignFirstResponder];
+}
+
+- (IBAction)backgroundTouched:(id)sender
+{
+    [friendEmail resignFirstResponder];
+}
+
 - (IBAction)addFriend:(id)sender {
     BOOL friendshipExists = [self doesFriendshipExistAlready:friendEmail.text];
     if (!friendshipExists) {
-        PFObject *newFriend = [[PFObject alloc] initWithClassName:@"Friends"];
-        [newFriend setObject:myEmail forKey:@"uid1"];
-        [newFriend setObject:friendEmail.text forKey:@"uid2"];
-        [newFriend saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            if (!error) {
-                Friend *f = [[Friend alloc] initWithEmail:friendEmail.text];
-                [existingFriends addObject:f];
-                label.text = @"Friend added!";
-            } else {
-                label.text = @"Error";
-            }
-        }];
+        if ([self doesUserExist:friendEmail.text]) {
+            PFObject *newFriend = [[PFObject alloc] initWithClassName:@"Friends"];
+            [newFriend setObject:myEmail forKey:@"uid1"];
+            [newFriend setObject:friendEmail.text forKey:@"uid2"];
+            [newFriend saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (!error) {
+                    Friend *f = [[Friend alloc] initWithEmail:friendEmail.text];
+                    [existingFriends addObject:f];
+                    label.text = [[NSString alloc] initWithFormat:@"%@ was added as a friend!",friendEmail.text];
+                } else {
+                    label.text = @"Error";
+                }
+            }];
+        } else {
+            label.text = [[NSString alloc] initWithFormat:@"No user with the email %@ exists",friendEmail.text];
+        }
     } else {
-        label.text = @"You are already friends!";
+        label.text = [[NSString alloc] initWithFormat:@"You are already friends with %@",friendEmail.text];
     }
 }
 
@@ -57,6 +71,16 @@
         if ([s isEqualToString:friendsEmail]) {
             return YES;
         }
+    }
+    return NO;
+}
+
+-(BOOL)doesUserExist:(NSString*)friendsEmail {
+    PFQuery *q = [PFQuery queryForUser];
+    [q whereKey:@"username" equalTo:friendsEmail];
+    NSLog(@"count is %d",[q countObjects]);
+    if([q countObjects] > 0) {
+        return YES;
     }
     return NO;
 }

@@ -21,6 +21,9 @@
     if (![emailPred evaluateWithObject:email.text]){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Account Creation Failed" message:@"Invalid Email" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
+    } else if ([password.text length] < 5) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Account Creation Failed" message:@"Password Must Be At Least 5 Characters" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
     }
     
     // email is valid. try to add user to user db

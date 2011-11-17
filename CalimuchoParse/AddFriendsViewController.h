@@ -18,5 +18,8 @@
 
 - (IBAction)addFriend:(id)sender;
 - (BOOL)doesFriendshipExistAlready:(NSString*)friendEmail;
+- (BOOL)doesUserExist:(NSString*)friendsEmail;
+- (IBAction)textFieldReturn:(id)sender;
+- (IBAction)backgroundTouched:(id)sender;
 
 @end

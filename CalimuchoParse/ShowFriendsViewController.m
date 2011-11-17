@@ -147,7 +147,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendCell"];
     Friend *friend = [self.friends objectAtIndex:indexPath.row];
 	cell.textLabel.text = friend.email;
-    cell.detailTextLabel.text = friend.email;
     return cell;
 }
 
