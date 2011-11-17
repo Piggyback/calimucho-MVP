@@ -1,21 +1,20 @@
 //
-//  ReferFriendsViewController.m
+//  ReferFriendsVC.m
 //  CalimuchoParse
 //
-//  Created by Kimberly Hsiao on 11/14/11.
+//  Created by Kimberly Hsiao on 11/16/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "ReferFriendsViewController.h"
+#import "ReferFriendsVC.h"
 #import "Parse/Parse.h"
 #import "Friend.h"
 
-@implementation ReferFriendsViewController
+@implementation ReferFriendsVC
 
 @synthesize friends;
 @synthesize myEmail;
 @synthesize vendor;
-@synthesize friendsToRefer;
 @synthesize tableData;
 @synthesize rowCheckArray;
 
@@ -32,9 +31,9 @@
     return self;
 }
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithStyle:style];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
@@ -42,11 +41,11 @@
 }
 
 - (IBAction)referButton:(id)sender {
-    for (int i = 0; i < [friends count]; i++) {
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
-        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-        if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
-            [self addReferral:cell.textLabel.text];
+    NSDictionary *unreferredFriendsDict = [tableData objectAtIndex:0];
+    NSArray *unreferredFriendsArr = [unreferredFriendsDict objectForKey:@"Friends"];
+    for (int i = 0; i < [rowCheckArray count]; i++) {
+        if ([[rowCheckArray objectAtIndex:i] boolValue]) {
+            [self addReferral:[unreferredFriendsArr objectAtIndex:i]];
         }
     }
     [self.navigationController popViewControllerAnimated:YES];
@@ -119,7 +118,7 @@
     
     NSDictionary *referredFriendsDict = [tableData objectAtIndex:0];
     NSArray *referredFriendsArr = [referredFriendsDict objectForKey:@"Friends"];
-                                   
+    
     for (int i = 0; i < [friends count]; i++) {
         NSString* friend = [[friends objectAtIndex:i] email];
         if (![referredFriendsArr containsObject:friend]) {
@@ -204,39 +203,27 @@
 
 #pragma mark - View lifecycle
 
+/*
+// Implement loadView to create a view hierarchy programmatically, without using a nib.
+- (void)loadView
+{
+}
+*/
+
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    
-    self.title = vendor.name;
-    
-    [self getFriendData];
-    [self setReferredFriends];
-    [self setNotReferredFriends];
-    [self initCheckArray];
-
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-    label.text = @"It was a very long book with many lines...";
-    // Colors and font
-    label.backgroundColor = [UIColor clearColor];
-    label.font = [UIFont systemFontOfSize:13];
-    label.shadowColor = [UIColor colorWithWhite:0.8 alpha:0.8];
-    label.textColor = [UIColor blackColor];
-    // Automatic word wrap
-    label.lineBreakMode = UILineBreakModeWordWrap;
-    label.textAlignment = UITextAlignmentCenter;
-    label.numberOfLines = 0;
-    // Autosize
-    [label sizeToFit];
-    // Add the UILabel to the tableview
-    self.tableView.tableFooterView = label;
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+     [super viewDidLoad];
+     
+     self.title = vendor.name;
+     
+     [self getFriendData];
+     [self setReferredFriends];
+     [self setNotReferredFriends];
+     [self initCheckArray];
 }
+
 
 - (void)viewDidUnload
 {
@@ -245,33 +232,11 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
-#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -293,7 +258,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ReferFriendCell"];
     }
-
+    
     NSDictionary *dictionary = [tableData objectAtIndex:indexPath.section];
     NSArray *array = [dictionary objectForKey:@"Friends"];
     NSString *cellValue = [array objectAtIndex:indexPath.row];
@@ -312,47 +277,6 @@
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-#pragma mark - Table view delegate
-
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     
     if(section == 0)
@@ -361,19 +285,6 @@
         return @"Friends You've Referred";
 }
 
-//- (NSString *)tableView:(UITableView *)tv titleForFooterInSection:(NSInteger)section {
-//    NSDictionary *unreferredFriendsDict = [tableData objectAtIndex:0];
-//    NSArray *unreferredFriendsArr = [unreferredFriendsDict objectForKey:@"Friends"];
-//    if (section == 0 && [unreferredFriendsArr count] == 0) {
-//        UILabel *footerText = [[UILabel alloc] init];
-//        footerText.text = @"You have already referred all of your friends!";
-//        return (NSString*)footerText;
-//        //return @"You have already referred all of your friends!";
-//    }
-//    else
-//        return nil;
-//}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([indexPath section] == 0) {
@@ -381,14 +292,6 @@
         [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }    
     
-//    if ([indexPath section] == 0) { 
-//        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-//        if (cell.accessoryType == UITableViewCellAccessoryNone) {
-//            cell.accessoryType = UITableViewCellAccessoryCheckmark;
-//        } else if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
-//            cell.accessoryType = UITableViewCellAccessoryNone;
-//        }
-//    }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -410,29 +313,9 @@
         [v addSubview:footerText];
         
         return v;
-    }    
-    
-    // if you have unreferred friends, add a button for referring
-    else if (section == 0) {
-        if(footerView == nil) {
-            UIView* v = [[UIView alloc] initWithFrame:CGRectMake(10.0, 0.0, 300.0, 40.0)];
-            
-            // create the button object
-            UIButton* b = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-            b.frame = CGRectMake(70.0, 0.0, 180, 40.0);
-            [b setTitle:@"Refer Friends!" forState:UIControlStateNormal];
-            // this sets up the callback for when the user hits the button
-            [b addTarget:self action:@selector(referButton:) forControlEvents:UIControlEventTouchUpInside];
-            
-            // add the button to the parent view
-            [v addSubview:b];
-            
-            return v;
-        }
-    }
-    
-    // otherwise, you should have no footer
-    return footerView;
+    }   
+    else 
+        return nil;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
@@ -441,8 +324,6 @@
     
     if ([unreferredFriendsArr count] == 0 && section == 0)
         return 40;
-    else if (section == 0)
-        return 65;
     else
         return 0;
 }

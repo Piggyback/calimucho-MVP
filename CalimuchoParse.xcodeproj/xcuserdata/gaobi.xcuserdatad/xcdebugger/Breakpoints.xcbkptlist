@@ -23,11 +23,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "CalimuchoParse/VendorSingleViewController.m"
-         timestampString = "343209182.390771"
+         timestampString = "343216968.387059"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "355"
-         endingLineNumber = "355"
+         startingLineNumber = "363"
+         endingLineNumber = "363"
          landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -37,11 +37,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "CalimuchoParse/VendorSingleViewController.m"
-         timestampString = "343209182.390771"
+         timestampString = "343216968.387059"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "311"
-         endingLineNumber = "311"
+         startingLineNumber = "319"
+         endingLineNumber = "319"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>

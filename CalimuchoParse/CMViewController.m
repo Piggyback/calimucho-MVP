@@ -66,10 +66,6 @@
 {
     [super viewDidLoad];
     
-    PFObject *testObject = [[PFObject alloc] initWithClassName:@"TestObject"];
-    [testObject setObject:@"bar" forKey:@"foo"];
-    [testObject save];
-    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

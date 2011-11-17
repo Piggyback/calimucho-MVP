@@ -14,6 +14,7 @@
 #import "VendorSingleViewController.h"
 #import "CMAppDelegate.h"
 #import "ReferFriendsViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation VendorSingleViewController
 
@@ -50,9 +51,10 @@
     self = [super initWithCoder:inCoder];
     fromQRreader = false;
     referrer = nil;
-    footer = [[UIView alloc] initWithFrame:CGRectMake(0, 322, 400, 45)];
-    redeemButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 5, 200, 22)];
-    
+    footer = [[UIView alloc] initWithFrame:CGRectMake(0, 322, 320, 45)];
+    //redeemButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 5, 200, 22)];
+    redeemButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    redeemButton.frame = CGRectMake(60,5,200,45);
     NSLog(@"initWithCoder for VendorSingleViewController");
     
     return self;
@@ -121,11 +123,12 @@
 //        footer = [[UIView alloc] initWithFrame:CGRectMake(0, 322, 400, 45)];
         //        footer.backgroundColor = [UIColor blackColor];
         footer.tag = 1;
+        [footer setBackgroundColor:[UIColor grayColor]];
 //        redeemButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 5, 200, 22)];
         NSString *redeemButtonTitle = [NSString stringWithFormat:@"Redeem freebie! (%i left)", [freebies intValue]];
         [redeemButton setTitle:redeemButtonTitle forState:UIControlStateNormal];
         [redeemButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [redeemButton setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+        [redeemButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
         [redeemButton addTarget:self action:@selector(redeemPressed:) forControlEvents:UIControlEventTouchUpInside];
         //        redeemButton.backgroundColor = [UIColor whiteColor];
         NSLog(@"Subview count: %i", [[footer subviews] count]);
@@ -223,7 +226,7 @@
         [userRow save];
         float pointsFloat = [points intValue]%10;
         [pointsProgressBar setProgress:pointsFloat/10.0];
-        juiceStatus.text = [NSString stringWithFormat:@"%i more piggybacks to obtain JUICE", (10-([points intValue]%10))];
+        juiceStatus.text = [NSString stringWithFormat:@"%i more piggybacks to a freebie!", (10-([points intValue]%10))];
         
         // check if user was referred by a friend
         if (fromReferralDetail == TRUE) {
@@ -303,11 +306,16 @@
     } else {
         float pointsFloat = [points intValue]%10;
         [pointsProgressBar setProgress:pointsFloat/10.0];
-        juiceStatus.text = [NSString stringWithFormat:@"%i more piggybacks to obtain JUICE", (10-([points intValue]%10))];
+        juiceStatus.text = [NSString stringWithFormat:@"%i more piggybacks to a freebie!", (10-([points intValue]%10))];
     }
     
     // display leaderboard
     // TODO: Optimize query calls by calling one query to retrieve all users per vendor in one call
+    
+    // draw border
+    leaderboard.layer.borderWidth = 2.0f;
+    leaderboard.layer.borderColor = [[UIColor blackColor] CGColor];
+    
     PFQuery *queryLeaderboard = [PFQuery queryWithClassName:@"Points"];
     [queryLeaderboard whereKey:@"vendorname" equalTo:vendor.name];
     [queryLeaderboard orderByDescending:@"points"];
